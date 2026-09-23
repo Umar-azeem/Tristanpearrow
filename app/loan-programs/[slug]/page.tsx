@@ -31,7 +31,7 @@ export default function LoanProgramDetailPage({
       <div className="container mx-auto px-4 max-w-4xl">
         <Link
           href="/loan-programs"
-          className="inline-flex items-center text-[#021B2C] hover:text-[#004d26] font-medium mb-8 transition group"
+          className="inline-flex items-center text-[#1470AF] hover:text-[#004d26] font-medium mb-8 transition group"
         >
           <Icons.ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition" />
           Back to All Programs
@@ -39,9 +39,9 @@ export default function LoanProgramDetailPage({
 
         <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-6 md:p-8">
           <div className="flex items-center gap-4 mb-6">
-            <div className="p-3 bg-[#021B2C]/10 rounded-full">
+            <div className="p-3 bg-[#1470AF]/10 rounded-full">
               {IconComponent && (
-                <IconComponent className="w-8 h-8 text-[#021B2C]" />
+                <IconComponent className="w-8 h-8 text-[#1470AF]" />
               )}
             </div>
             <div>
@@ -72,7 +72,7 @@ export default function LoanProgramDetailPage({
                       key={idx}
                       className="flex items-start gap-2 text-gray-700"
                     >
-                      <Icons.CheckCircle className="w-5 h-5 text-[#021B2C] flex-shrink-0 mt-0.5" />
+                      <Icons.CheckCircle className="w-5 h-5 text-[#1470AF] flex-shrink-0 mt-0.5" />
                       <span>{benefit}</span>
                     </li>
                   ))}
@@ -101,8 +101,8 @@ export default function LoanProgramDetailPage({
 
             {/* Ideal For */}
             {program.idealFor && program.idealFor.length > 0 && (
-              <div className="mt-6 p-4 bg-[#F0F7F3] rounded-lg border border-[#021B2C]/20">
-                <h3 className="text-md font-semibold text-[#021B2C] mb-3">
+              <div className="mt-6 p-4 bg-[#F0F7F3] rounded-lg border border-[#1470AF]/20">
+                <h3 className="text-md font-semibold text-[#1470AF] mb-3">
                   Who This Loan Is For
                 </h3>
                 <ul className="flex flex-wrap gap-2 list-none p-0">
@@ -127,7 +127,7 @@ export default function LoanProgramDetailPage({
                 <div className="space-y-4">
                   {program.steps.map((step) => (
                     <div key={step.step} className="flex gap-4 items-start">
-                      <div className="flex-shrink-0 w-8 h-8 bg-[#021B2C] text-white rounded-full flex items-center justify-center font-bold text-sm">
+                      <div className="flex-shrink-0 w-8 h-8 bg-[#1470AF] text-white rounded-full flex items-center justify-center font-bold text-sm">
                         {step.step}
                       </div>
                       <div>
@@ -199,7 +199,7 @@ export default function LoanProgramDetailPage({
             <div className="mt-8 flex flex-wrap gap-4 border-t border-gray-200 pt-8">
               <Link
                 href={program.ctaLink || "/contact"}
-                className="inline-flex items-center px-6 py-3 bg-[#021B2C] hover:bg-[#004d26] text-white font-semibold rounded-lg transition"
+                className="inline-flex items-center px-6 py-3 bg-[#1470AF] hover:bg-[#004d26] text-white font-semibold rounded-lg transition"
               >
                 {program.ctaText || "Get Started"}
                 <Icons.ArrowRight className="ml-2 w-4 h-4" />

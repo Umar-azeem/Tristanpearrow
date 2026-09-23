@@ -141,24 +141,13 @@ export default function AboutPage() {
   ];
 
   const states = [
-    "AL",
     "FL",
-    "GA",
-    "SC",
-    "NC",
-    "TN",
-    "VA",
-    "TX",
-    "CA",
-    "OR",
-    "PA",
-    "MO",
   ];
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section - Veronica Barragan */}
-      <div className="relative bg-gradient-to-r from-[#020B2C] to-[#021B2C] text-white rounded-2xl">
+      {/* Hero Section - Tristan Pearrow */}
+      <div className="relative bg-gradient-to-r from-[#0329b3] to-[#1470AF] text-white rounded-2xl">
         <div
           className="absolute inset-0 z-0 opacity-20"
           style={{
@@ -173,27 +162,27 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-[#ffdfd9] font-bold tracking-[4px] text-sm mb-4">
-                Senior Loan Officer
+                Mortgage Loan Officer
               </p>
-              <p className="text-[#ffdfd9]  text-sm mb-2">NMLS #1779283</p>
+              <p className="text-[#ffdfd9]  text-sm mb-2">NMLS #1878186</p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
-                Veronica Barragan
+                Tristan Pearrow
               </h1>
               <p className="text-[#ffdfd9]  text-lg max-w-xl mb-2">
-                1526 Monte Sano Ave., Office #4
+                8520 Govt Drive
               </p>
               <p className="text-gray-200 text-lg max-w-xl mb-6">
-                Augusta, Georgia 30904
+                New Port Richey, FL 34654
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact-us">
-                  <button className="bg-white text-[#021B2C] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                  <button className="bg-white text-[#1470AF] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
                     Get Pre-Approved
                   </button>
                 </Link>
-                <a href="tel:+17068293294">
+                <a href="tel:+19047351895">
                   <button className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition flex items-center gap-2">
-                    <Icons.Phone className="w-4 h-4" /> Call Veronica
+                    <Icons.Phone className="w-4 h-4" /> Call Tristan
                   </button>
                 </a>
               </div>
@@ -203,14 +192,14 @@ export default function AboutPage() {
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
                 <div className="absolute inset-0 rounded-full bg-[#011829]/95 animate-pulse" />
                 <Image
-                  src="/img/vdp1.png"
-                  alt="Veronica Barragan - Senior Loan Officer"
+                  src="/img/tr.png"
+                  alt="Tristan Pearrow - Mortgage Loan Officer"
                   fill
                   className="rounded-full object-cover border-4 border-white/20 shadow-2xl"
                   priority
                 />
                 <div className="absolute -bottom-2 -right-2 bg-white rounded-full p-3 shadow-lg">
-                  <Icons.BadgeCheck className="w-8 h-8 text-[#021B2C]" />
+                  <Icons.BadgeCheck className="w-8 h-8 text-[#1470AF]" />
                 </div>
               </div>
             </div>
@@ -219,58 +208,36 @@ export default function AboutPage() {
       </div>
 
       <div className="container mx-auto max-w-7xl px-4 py-12 md:py-16">
-        {/* About Veronica Barragan */}
+        {/* About Tristan Pearrow */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            About Veronica Barragan
+            About Tristan Pearrow
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
               <p className="text-gray-700 leading-relaxed mb-4">
-                I have been in the Mortgage Industry for the past 30 years and
-                have enjoyed every minute of it. I started as a “Temp Girl” for
-                a small Mortgage Banker in Visalia in 1988 and held the
-                receptionist position. I eventually went on to the positions of:
-                Doc drawer, shipper, loan processor and Loan Officer. At the end
-                of my tenure with this company in 2005, I was Vice President. My
-                true passion in this industry is being a “Loan Officer”. I enjoy
-                meeting clients one on one, and guiding them one step at a time.
-                Whether you need help writing a credit letter, structuring a
-                savings plan, or finding the right home, I am here to assist
-                you.
+                I{`'`}m Tristan Pearrow, a 4th generation Sunshine State native and dedicated mortgage loan officer. I hail from St. Augustine, the Nation's Oldest City, and studied at the University of Central Florida and the University of North Florida where I earned my Bachelors Degree. I currently live in St. Augustine with my two rescue dogs and cat.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                He offers a full range of loan options, including Conventional,
-                FHA, VA, and USDA programs, as well as financing for new
-                construction projects. For self-employed borrowers who may not
-                qualify through traditional methods, Veronica also provides a
-                variety of non-traditional solutions tailored to their needs.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Originally from Augusta, Veronica graduated from the University
-                of Georgia with a degree in Economics. He spent nine years
-                living in Atlanta, where he met his wife, before returning to
-                Augusta to begin his career as a mortgage lender. He and his
-                wife have two sons, Daniel (22) and Shaw (21).
+                Whether you{`'`}re purchasing your first home, upgrading to accommodate an expanding family, building your real estate portfolio - or refinancing to obtain more favorable terms or remodeling funds, I'll ensure your best interests are at the heart of the loan solution I'll choose for you. From application through closing and every step along the way, you'll be confident in my truly simple, transparent and award-winning process.
               </p>
               <p className="text-gray-700 leading-relaxed font-medium">
-                If you want a mortgage experience that{`'`}s professional,
-                personal, and even a little fun, give Veronica a call.
+                I understand how important my clients loans are - and I am not satisfied until you are delighted with the process.
               </p>
               <div className="mt-6 flex items-center gap-4">
                 <a
-                  href="tel:7068293294"
-                  className="text-[#021B2C] font-medium flex items-center gap-2"
+                  href="tel:+19047351895"
+                  className="text-[#1470AF] font-medium flex items-center gap-2"
                 >
                   <Icons.Phone className="w-4 h-4" />
-                  (559) 638-3338
+                  (904) 735-1895
                 </a>
                 <a
-                  href="mailto:Veronica@TeamVB.Net"
-                  className="text-[#021B2C] font-medium flex items-center gap-2"
+                  href="mailto:Tristanpearrow@gmial.com"
+                  className="text-[#1470AF] font-medium flex items-center gap-2"
                 >
                   <Icons.Mail className="w-4 h-4" />
-                  Veronica@TeamVB.Net
+                  Tristanpearrow@gmial.com
                 </a>
               </div>
             </div>
@@ -280,10 +247,10 @@ export default function AboutPage() {
                 A TEAM YOU CAN TRUST
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                My team and I would love to help you get into a new home. Please
-                utilize the links below and contact our office if you have any
-                questions. We have helped thousands of individuals and families
-                within the Central Valley, and would love to help you, too…
+                I would love to help you get into a new home. Please
+                utilize the links below and contact my office if you have any
+                questions. I have helped individuals and families
+                throughout Florida, and would love to help you, too…
               </p>
             </div>
           </div>
@@ -302,8 +269,8 @@ export default function AboutPage() {
                   key={index}
                   className="text-center p-6 rounded-xl hover:bg-gray-50 transition"
                 >
-                  <div className="w-14 h-14 bg-[#021B2C]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-7 h-7 text-[#021B2C]" />
+                  <div className="w-14 h-14 bg-[#1470AF]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-7 h-7 text-[#1470AF]" />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">
                     {value.title}
@@ -316,125 +283,110 @@ export default function AboutPage() {
         </section>
 
         <section className="mb-16 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-  <h2 className="text-2xl md:text-3xl font-bold text-[#08263d] mb-8 text-center">
-    ME, & My Team
-  </h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-[#08263d] mb-8 text-center">
+            ME, & My Team
+          </h2>
 
-  <div className="relative w-full rounded-xl overflow-hidden mb-2">
-    <div className="absolute inset-0 z-20 flex items-center justify-center">
-      <div className="text-center text-white">
-        <h3 className="text-2xl md:text-4xl font-bold drop-shadow-lg">
-          A Team You Can Trust
-        </h3>
-        <p className="text-white/90 mt-2 drop-shadow-lg">
-          Helping thousands of families achieve their dream of
-          homeownership
-        </p>
-      </div>
-    </div>
-  </div>
-  
-  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-  <div className="lg:col-span-1 relative h-64 md:h-1/3  min-h-1/3">
-    <Image
-      src="/img/team.png"
-      alt="Team Banner 1"
-      fill
-      className="object-cover rounded-xl"
-      sizes="(max-width: 1024px) 100vw, 33vw"
-      priority // Add this if it's above the fold
-      quality={90}
-    />
-  </div>
-  <div className="lg:col-span-2">
-    <div className="prose max-w-none">
-      <div className="bg-[#eef5f6] rounded-xl p-6 mb-4">
-        <h4 className="text-lg font-bold text-[#08263d] mb-3 flex items-center gap-2">
-          <Heart size={20} className="text-[#67d8dc]" />
-          My Journey in Mortgage
-        </h4>
-        <p className="text-gray-700 leading-relaxed">
-          I have been in the Mortgage Industry for the past 30 years
-          and have enjoyed every minute of it. I started as a{" "}
-          <strong>"Temp Girl"</strong> for a small Mortgage Banker in
-          Visalia in 1988 and held the receptionist position. I
-          eventually went on to the positions of: Doc drawer, shipper,
-          loan processor and Loan Officer. At the end of my tenure
-          with this company in 2005, I was
-          <strong> Vice President</strong>.
-        </p>
-      </div>
-
-      <p className="text-gray-700 leading-relaxed mb-4">
-        My true passion in this industry is being a{" "}
-        <strong>"Loan Officer"</strong>. I enjoy meeting clients one
-        on one, and guiding them one step at a time. Whether you need
-        help writing a credit letter, structuring a savings plan, or
-        finding the right home, I am here to assist you.
-      </p>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-        <div className="bg-white rounded-xl p-4 border border-gray-200">
-          <div className="flex items-center gap-2 text-[#67d8dc]">
-            <CheckCircle size={18} />
-            <span className="font-semibold text-[#08263d]">
-              My Passion
-            </span>
+          <div className="relative w-full rounded-xl overflow-hidden mb-2">
+            <div className="absolute inset-0 z-20 flex items-center justify-center">
+              <div className="text-center text-white">
+                <h3 className="text-2xl md:text-4xl font-bold drop-shadow-lg">
+                  A Team You Can Trust
+                </h3>
+                <p className="text-white/90 mt-2 drop-shadow-lg">
+                  Helping families achieve their dream of homeownership
+                </p>
+              </div>
+            </div>
           </div>
-          <p className="text-sm text-gray-600 mt-1">
-            Meeting clients one on one and guiding them step by step
-          </p>
-        </div>
-        <div className="bg-white rounded-xl p-4 border border-gray-200">
-          <div className="flex items-center gap-2 text-[#67d8dc]">
-            <Users size={18} />
-            <span className="font-semibold text-[#08263d]">
-              My Team
-            </span>
-          </div>
-          <p className="text-sm text-gray-600 mt-1">
-            Dedicated professionals helping thousands in the Central
-            Valley
-          </p>
-        </div>
-      </div>
 
-      <div className="mt-6 p-4 bg-[#08263d] rounded-xl text-white">
-        <p className="italic text-white/90">
-          "My team and I would love to help you get into a new home.
-          We have helped thousands of individuals and families within
-          the Central Valley, and would love to help you, too…"
-        </p>
-        <div className="flex items-center gap-4 mt-3 pt-3 border-t border-white/20">
-          <div className="flex items-center gap-2">
-            <Star size={16} className="text-[#67d8dc]" />
-            <span className="text-sm">30 Years Experience</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Award size={16} className="text-[#67d8dc]" />
-            <span className="text-sm">Vice President</span>
-          </div>
-        </div>
-      </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-1 relative h-64 md:h-1/3  min-h-1/3">
+              <Image
+                src="/img/team.png"
+                alt="Team Banner 1"
+                fill
+                className="object-cover rounded-xl"
+                sizes="(max-width: 1024px) 100vw, 33vw"
+                priority // Add this if it's above the fold
+                quality={90}
+              />
+            </div>
+            <div className="lg:col-span-2">
+              <div className="prose max-w-none">
+                <div className="bg-[#eef5f6] rounded-xl p-6 mb-4">
+                  <h4 className="text-lg font-bold text-[#08263d] mb-3 flex items-center gap-2">
+                    <Heart size={20} className="text-[#67d8dc]" />
+                    My Journey in Mortgage
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    I'm a 4th generation Sunshine State native and dedicated mortgage loan officer. I hail from St. Augustine, the Nation's Oldest City, and studied at the University of Central Florida and the University of North Florida where I earned my Bachelors Degree. I currently live in St. Augustine with my two rescue dogs and cat.
+                  </p>
+                </div>
 
-      <div className="mt-6 flex flex-wrap gap-4">
-        <Link
-          href="/contact-us"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-[#67d8dc] text-[#08263d] font-bold rounded-full hover:bg-[#67d8dc]/90 transition-all hover:scale-105"
-        >
-          Contact Veronica <ArrowRight size={18} />
-        </Link>
-        <Link
-          href="/#calculator"
-          className="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#08263d] text-[#08263d] font-bold rounded-full hover:bg-[#08263d] hover:text-white transition-all"
-        >
-          Try Our Calculator <ArrowRight size={18} />
-        </Link>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Whether you're purchasing your first home, upgrading to accommodate an expanding family, building your real estate portfolio - or refinancing to obtain more favorable terms or remodeling funds, I'll ensure your best interests are at the heart of the loan solution I'll choose for you.
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                  <div className="bg-white rounded-xl p-4 border border-gray-200">
+                    <div className="flex items-center gap-2 text-[#67d8dc]">
+                      <CheckCircle size={18} />
+                      <span className="font-semibold text-[#08263d]">
+                        My Passion
+                      </span>
+                    </div>
+                    <p className="text-sm text-gray-600 mt-1">
+                      Ensuring your best interests are at the heart of every loan solution
+                    </p>
+                  </div>
+                  <div className="bg-white rounded-xl p-4 border border-gray-200">
+                    <div className="flex items-center gap-2 text-[#67d8dc]">
+                      <Users size={18} />
+                      <span className="font-semibold text-[#08263d]">
+                        My Process
+                      </span>
+                    </div>
+                    <p className="text-sm text-gray-600 mt-1">
+                      A truly simple, transparent and award-winning process from application to closing
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-6 p-4 bg-[#08263d] rounded-xl text-white">
+                  <p className="italic text-white/90">
+                    "I understand how important my clients loans are - and I am not satisfied until you are delighted with the process."
+                  </p>
+                  <div className="flex items-center gap-4 mt-3 pt-3 border-t border-white/20">
+                    <div className="flex items-center gap-2">
+                      <Star size={16} className="text-[#67d8dc]" />
+                      <span className="text-sm">4th Generation Floridian</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Award size={16} className="text-[#67d8dc]" />
+                      <span className="text-sm">Award-Winning Process</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 flex flex-wrap gap-4">
+                  <Link
+                    href="/contact-us"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#67d8dc] text-[#08263d] font-bold rounded-full hover:bg-[#67d8dc]/90 transition-all hover:scale-105"
+                  >
+                    Contact Tristan <ArrowRight size={18} />
+                  </Link>
+                  <Link
+                    href="/#calculator"
+                    className="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#08263d] text-[#08263d] font-bold rounded-full hover:bg-[#08263d] hover:text-white transition-all"
+                  >
+                    Try Our Calculator <ArrowRight size={18} />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* What Can I Afford? */}
         <section className="mb-16 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
@@ -449,7 +401,7 @@ export default function AboutPage() {
               prepayment amounts to see their impact on your mortgage.
             </p>
             <Link href="/calculator">
-              <button className="bg-[#021B2C] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#f36f55] transition">
+              <button className="bg-[#1470AF] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#f36f55] transition">
                 Try Our Mortgage Calculator
               </button>
             </Link>
@@ -462,7 +414,7 @@ export default function AboutPage() {
             Loan Programs & Expertise
           </h2>
           <p className="text-gray-600 mb-6">
-            Veronica offers a full range of loan options to meet your unique
+            Tristan offers a full range of loan options to meet your unique
             needs:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -481,7 +433,7 @@ export default function AboutPage() {
         </section>
 
         {/* Let's Get You Into Your Dream Home */}
-        <section className="mb-16 bg-[#021B2C] text-white rounded-2xl p-8 text-center">
+        <section className="mb-16 bg-[#1470AF] text-white rounded-2xl p-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Let{`'`}s get you into your dream home
           </h2>
@@ -489,17 +441,17 @@ export default function AboutPage() {
             It{`'`}s simple to get started on your mortgage journey – whether
             you{`'`}re just looking to get pre-qualified or are ready to submit
             an application. Just click the button below or submit a contact form
-            to speak with one of our mortgage experts. We're here to help!
+            to speak with me. I'm here to help!
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="mailto:LBaird@cfmtg.com">
-              <button className="bg-white text-[#021B2C] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+            <a href="mailto:Tristanpearrow@gmial.com">
+              <button className="bg-white text-[#1470AF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
                 Get Started Today
               </button>
             </a>
             <Link href="/contact-us">
               <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition flex items-center gap-2">
-                <Icons.Mail className="w-4 h-4" /> Contact Veronica
+                <Icons.Mail className="w-4 h-4" /> Contact Tristan
               </button>
             </Link>
           </div>
@@ -508,7 +460,7 @@ export default function AboutPage() {
         {/* Process Steps */}
         <section className="mb-16 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
-            How to Work With Veronica
+            How to Work With Tristan
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {processSteps.slice(0, 4).map((step) => (
@@ -516,7 +468,7 @@ export default function AboutPage() {
                 key={step.step}
                 className="text-center p-4 rounded-xl hover:bg-gray-50 transition"
               >
-                <div className="w-12 h-12 bg-[#021B2C] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
+                <div className="w-12 h-12 bg-[#1470AF] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
                   {step.step}
                 </div>
                 <h4 className="font-semibold text-gray-900 text-sm mb-1">
@@ -532,7 +484,7 @@ export default function AboutPage() {
                 key={step.step}
                 className="text-center p-4 rounded-xl hover:bg-gray-50 transition"
               >
-                <div className="w-12 h-12 bg-[#021B2C] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
+                <div className="w-12 h-12 bg-[#1470AF] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
                   {step.step}
                 </div>
                 <h4 className="font-semibold text-gray-900 text-sm mb-1">
@@ -550,7 +502,7 @@ export default function AboutPage() {
             Service Areas
           </h2>
           <p className="text-gray-300 text-center mb-6">
-            Veronica is proud to offer expert mortgage guidance in the following
+            Tristan is proud to offer expert mortgage guidance in the following
             states. Please note that specific loan program availability can vary
             by state.
           </p>
@@ -587,31 +539,31 @@ export default function AboutPage() {
         </section>
 
         {/* CTA Footer */}
-        <div className="mt-12 bg-[#021B2C] rounded-2xl p-8 text-white text-center">
+        <div className="mt-12 bg-[#1470AF] rounded-2xl p-8 text-white text-center">
           <h3 className="text-xl font-bold mb-2">Ready to get started?</h3>
           <p className="text-green-200 mb-6 text-sm">
-            Contact Veronica today for a no-obligation consultation.
+            Contact Tristan today for a no-obligation consultation.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="tel:+15596383338"
-              className="inline-flex items-center gap-2 bg-white text-[#021B2C] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
+              href="tel:+19047351895"
+              className="inline-flex items-center gap-2 bg-white text-[#1470AF] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
             >
-              <Icons.Phone className="w-5 h-5" /> (559)-638-3338
+              <Icons.Phone className="w-5 h-5" /> (904) 735-1895
             </a>
             <a
-              href="mailto: Veronica@TeamVB.Net"
+              href="mailto:Tristanpearrow@gmial.com"
               className="inline-flex items-center gap-2 border-2 border-white text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/10 transition"
             >
-              <Icons.Mail className="w-5 h-5" /> Email Veronica
+              <Icons.Mail className="w-5 h-5" /> Email Tristan
             </a>
           </div>
         </div>
 
         <div className="mt-8 p-4 bg-gray-50 rounded-lg border border-gray-200">
           <p className="text-xs text-gray-500 text-center leading-relaxed">
-            Veronica Barragan is a licensed mortgage professional. NMLS
-            #1779283. Loan approvals are subject to underwriting guidelines.
+            Tristan Pearrow is a licensed mortgage professional. NMLS
+            #1878186. Loan approvals are subject to underwriting guidelines.
             Equal Housing Lender.
           </p>
         </div>

@@ -19,7 +19,7 @@ export default function Footer() {
 
         <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
           <Link href="/contact-us">
-            <button className="bg-[#021B2C] px-6 py-3 rounded-xl transition-transform duration-300 hover:translate-y-1 w-full sm:w-auto">
+            <button className="bg-[#1470AF] px-6 py-3 rounded-xl transition-transform duration-300 hover:translate-y-1 w-full sm:w-auto">
               Contact us
             </button>
           </Link>
@@ -43,10 +43,10 @@ export default function Footer() {
               unoptimized
             />
             <Link
-              href="tel:+15596383338"
+              href="tel:+19047351895"
               className="hover:text-gray-300 transition-colors"
             >
-              (559) 638-3338
+              (904) 735-1895
             </Link>
           </p>
 
@@ -60,10 +60,10 @@ export default function Footer() {
               unoptimized
             />
             <Link
-              href="mailto:Veronica@TeamVB.Net"
+              href="mailto:Tristanpearrow@gmial.com"
               className="break-all  hover:text-gray-300 transition-colors"
             >
-              Veronica@TeamVB.Net
+              Tristanpearrow@gmial.com
             </Link>
           </p>
           <p className="mb-4 flex flex-row justify-start items-start gap-2">
@@ -76,17 +76,15 @@ export default function Footer() {
               unoptimized
             />
             <a
-              href="https://maps.app.goo.gl/75Lgm7BUBWiGwsNT6"
+              href="https://maps.google.com/?q=8520+Govt+Drive+New+Port+Richey+FL+34654"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition-colors"
             >
-              935 G St, Reedley, CA 93654,
+              8520 Govt Drive
               <br />
-              USA
+              New Port Richey, FL 34654
             </a>
-            {/* FHA Case Transfer Request: */}
-            {/* <br /> LBaird@cfmtg.com */}
           </p>
           {/* Social Links Row */}
           <div className="flex gap-3 mb-6 ">
@@ -94,22 +92,22 @@ export default function Footer() {
               {
                 src: "https://cdn.prod.website-files.com/65d509901b89bb3fd2a62af7/65d509901b89bb3fd2a62afd_ri_facebook-fill-white.svg",
                 alt: "Facebook",
-                href: "https://www.facebook.com/VeronicaBarraganLender/",
-              },
-              // {
-              //   src: "https://cdn.prod.website-files.com/65d509901b89bb3fd2a62af7/65d509901b89bb3fd2a62c30_linkedin-white.svg",
-              //   alt: "google",
-              //   href: "mailto:Veronica@TeamVB.Net",
-              // },
-              {
-                src: "https://cdn.simpleicons.org/google/white",
-                alt: "google",
-                href: "mailto:Veronica@TeamVB.Net",
+                href: "https://www.facebook.com/loanswithtristan",
               },
               {
                 src: "https://cdn.prod.website-files.com/65d509901b89bb3fd2a62af7/65d509901b89bb3fd2a62b8f_instagram-white.svg",
                 alt: "Instagram",
-                href: "https://instagram.com/homeloansbyveronica/",
+                href: "http://instagram.com/loanwolfmoney",
+              },
+              {
+                src: "https://cdn.simpleicons.org/youtube/white",
+                alt: "YouTube",
+                href: "https://www.youtube.com/@loanwolfmoney",
+              },
+              {
+                src: "https://cdn.simpleicons.org/tiktok/white",
+                alt: "TikTok",
+                href: "https://www.tiktok.com/@loanwolfmoney",
               },
             ].map(({ src, alt, href }) => (
               <Link
@@ -136,7 +134,7 @@ export default function Footer() {
         <div className="flex flex-row-reverse md:flex-col items-center md:items-end justify-between md:justify-end gap-6 md:gap-0">
           <button
             onClick={scrollToTop}
-            className="w-14 h-14 rounded-full bg-[#021B2C] flex items-center justify-center flex-shrink-0 transition-transform hover:-translate-y-1 active:translate-y-0"
+            className="w-14 h-14 rounded-full bg-[#1470AF] flex items-center justify-center flex-shrink-0 transition-transform hover:-translate-y-1 active:translate-y-0"
             aria-label="Scroll to top"
           >
             <Image
@@ -152,7 +150,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:mt-20">
             <Image
               src="/img/logo.png"
-              alt="Adrian Webb logo"
+              alt="Tristan Pearrow logo"
               width={100}
               height={100}
               className="w-32 h-auto"

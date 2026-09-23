@@ -23,11 +23,13 @@ const MortgageLandingPage = () => {
     linkedin: "https://img.icons8.com/ios-filled/50/374151/linkedin.png",
     youtube: "https://img.icons8.com/ios-filled/50/374151/youtube-play.png",
     google: "https://img.icons8.com/ios-filled/50/374151/google-logo.png",
+    tiktok: "https://img.icons8.com/ios-filled/50/374151/tiktok.png",
+
   };
 
   return (
     <div className="">
-      <div className="rounded-3xl bg-[#021B2C] text-white font-sans overflow-hidden relative ">
+      <div className="rounded-3xl bg-[#1470AF] text-white font-sans overflow-hidden relative ">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-10 pointer-events-none hidden md:block">
           {/* <svg width="600" height="700" viewBox="0 0 600 700" fill="none">
             <path
@@ -43,21 +45,21 @@ const MortgageLandingPage = () => {
           <div className="flex-1  max-w-2xl w-full text-center lg:text-left">
             <div className="hidden md:flex flex-col ">
               <p className=" text-md font-bold tracking-[0.2em] mb-6 uppercase">
-                Hi, I{`'`}m Veronica Barragan
+                Hi, I{`'`}m Tristan Pearrow
               </p>
 
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-6">
-                Your Senior
+                Your Mortgage
                 <br />
                 Loan Officer
               </h1>
             </div>
             <p className="text-sm sm:text-base text-gray-200 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              I have been in the Mortgage Industry for the past 30 years and
-              have enjoyed every minute of it. I started as a “Temp Girl” for a
-              small Mortgage Banker in Visalia in 1988 and held the receptionist
-              position. I eventually went on to the positions of: Doc drawer,
-              shipper, loan processor and Loan Officer.
+              I'm a 4th generation Sunshine State native and dedicated mortgage
+              loan officer. I hail from St. Augustine, the Nation{`'`}s Oldest City,
+              and studied at the University of Central Florida and the
+              University of North Florida where I earned my Bachelors Degree. I
+              currently live in St. Augustine with my two rescue dogs and cat.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-4">
@@ -97,11 +99,11 @@ const MortgageLandingPage = () => {
             <div className="  relative w-full max-w-[450px]">
               <div className="flex flex-col text-center p-1 md:hidden">
                 <p className="text-md font-bold tracking-[0.2em] mb-2 uppercase">
-                  Hi, I{`'`}m Veronica Barragan{" "}
+                  Hi, I{`'`}m Tristan Pearrow{" "}
                 </p>
 
                 <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-24">
-                  Your Senior
+                  Your Mortgage
                   <br />
                   Loan Officer{" "}
                 </h1>
@@ -122,8 +124,8 @@ const MortgageLandingPage = () => {
                 </div>
               </div>
               <img
-                src="/img/dp.png"
-                alt="Adrian Webb"
+                src="/img/tr.png"
+                alt="Tristan Pearrow"
                 className="w-full h-[400px] sm:h-[580px] lg:h-[550px] object-cover object-top rounded-2xl"
                 style={{
                   maskImage:
@@ -133,15 +135,15 @@ const MortgageLandingPage = () => {
                 }}
               />
 
-              <div className="absolute -bottom-6 sm:bottom-1 right-0 md:right-22 left-0 sm:left-auto mx-auto sm:mx-0 bg-white text-gray-900 p-3 sm:p-4 rounded-2xl shadow-2xl w-[60%] sm:w-52">
-                <h3 className="text-xl font-bold mb-2">Veronica Barragan</h3>
+              <div className="absolute -bottom-6 sm:bottom-10 right-0 md:right-22 left-0 sm:left-auto mx-auto sm:mx-0 bg-white text-gray-900 p-5 sm:p-6 rounded-2xl shadow-2xl w-[60%] sm:w-72">
+                <h3 className="text-xl font-bold mb-2">Tristan Pearrow</h3>
                 <p className="text-gray-600 text-sm mb-1">
-                  Senior Loan Officer
+                  Mortgage Loan Officer
                 </p>
-                <p className="text-gray-500 text-xs mb-1">NMLS ID: 1779283</p>
+                <p className="text-gray-500 text-xs mb-1">NMLS ID: 1878186</p>
                 <div className="flex items-center gap-3 w-full">
                   <a
-                    href="https://www.facebook.com/VeronicaBarraganLender/"
+                    href="https://www.facebook.com/loanswithtristan"
                     className="w-9 h-8 md:w-10 md:h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition"
                   >
                     <Icon
@@ -151,23 +153,23 @@ const MortgageLandingPage = () => {
                     />
                   </a>
                   <a
-                    href="https://instagram.com/homeloansbyveronica/"
+                    href="http://instagram.com/loanwolfmoney"
                     className="w-9 h-8 md:w-10 md:h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition"
                   >
                     <Icon src={icons.instagram} size={18} />
                   </a>
                   <a
-                    href="mailto:Veronica@TeamVB.Net"
+                    href="https://www.youtube.com/@loanwolfmoney"
                     className="w-9 h-8 md:w-10 md:h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition"
                   >
-                    <Icon src={icons.google} size={18} />
+                    <Icon src={icons.youtube} size={18} />
                   </a>
-                  {/* <a
-                    href="/LBaird@cfmtg.com"
-                    className=" w-9 h-8 md:w-10 md:h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition"
+                  <a
+                    href="https://www.tiktok.com/@loanwolfmoney"
+                    className="w-9 h-8 md:w-10 md:h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition"
                   >
-                    <Icon src={icons.google} size={18} />
-                  </a> */}
+                    <Icon src={icons.tiktok} size={18} />
+                  </a>
                 </div>
               </div>
             </div>

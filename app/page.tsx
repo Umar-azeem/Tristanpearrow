@@ -6,6 +6,7 @@ import FAQ from "./components/FAQ";
 import Loan from "./components/Loan";
 import MortgageCalculator from "./components/MortgageCalculator";
 import MortgageLandingPage from "./components/MortgageLandingPage";
+import Tool from "./components/Tool";
 import VideoSection from "./components/VideoSection";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
    <CreditBuild/>
    <MortgageCalculator/>
    <CardStack/>
+   <Tool/>
    <Loan/>
    <VideoSection/>
    <FAQ/>

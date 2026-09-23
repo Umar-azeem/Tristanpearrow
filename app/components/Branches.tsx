@@ -28,7 +28,7 @@ function buildPhotoUrl(name: string): string {
 }
 
 const avatarColors = [
-  "#021B2C",
+  "#1470AF",
   "#004a25",
   "#1a7a4a",
   "#2d8a5e",
@@ -84,7 +84,7 @@ const branchesData = [
     name: "Antonio Borges",
     title: "Branch Manager",
     nmls: "160123",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(302) 319-1111",
     email: "ABorges@cfmtg.com",
   },
@@ -92,7 +92,7 @@ const branchesData = [
     name: "Adriana Clapper",
     title: "Branch Manager",
     nmls: "376370",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(240) 603-5698",
     email: "aclapper@cfmtg.com",
   },
@@ -108,7 +108,7 @@ const branchesData = [
     name: "Ben Nihart",
     title: "Branch Manager",
     nmls: "1167633",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(225) 892-8911",
     email: "bnihart@cfmtg.com",
   },
@@ -116,7 +116,7 @@ const branchesData = [
     name: "Michael Liguori",
     title: "Branch Manager",
     nmls: "1819838",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(516) 509-9062",
     email: "mliguori@moderndaylending.com",
   },
@@ -140,7 +140,7 @@ const branchesData = [
     name: "Mason Kerth",
     title: "Branch Manager",
     nmls: "1976533",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(205) 283-7624",
     email: "mason.kerth@cfmtg.com",
   },
@@ -148,7 +148,7 @@ const branchesData = [
     name: "Brian Lynch",
     title: "Branch Manager",
     nmls: "376696",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(251) 597-9750",
     email: "BLynch@cfmtg.com",
   },
@@ -164,7 +164,7 @@ const branchesData = [
     name: "Jim Ross",
     title: "Branch Manager",
     nmls: "260705",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(602) 740-5719",
     email: "JRoss@cfmtg.com",
   },
@@ -196,7 +196,7 @@ const branchesData = [
     name: "Tim Sturtevant",
     title: "Branch Manager",
     nmls: "6772",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(508) 982-3056",
     email: "tim@cfmtg.com",
   },
@@ -244,7 +244,7 @@ const branchesData = [
     name: "Clayton Salazar",
     title: "Branch Manager",
     nmls: "1988759",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(407) 497-9948",
     email: "CSalazar@cfmtg.com",
   },
@@ -276,7 +276,7 @@ const branchesData = [
     name: "Dee Ann Harper",
     title: "Branch Manager",
     nmls: "1323537",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(405) 824-8320",
     email: "DHarper@cfmtg.com",
   },
@@ -300,7 +300,7 @@ const branchesData = [
     name: "Martin Witzburg",
     title: "Branch Manager",
     nmls: "202853",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(908) 294-0433",
     email: "mwitzburg@cfmtg.com",
   },
@@ -316,7 +316,7 @@ const branchesData = [
     name: "Brett Jerhoff",
     title: "Production Manager",
     nmls: "307368",
-    office: "(559) 638-3338 x 1021",
+    office: "(904) 735-1895 x 1021",
     cell: "(619) 847-6196",
     email: "bjerhoff@cfmtg.com",
   },
@@ -340,7 +340,7 @@ const branchesData = [
     name: "Adam MacBride",
     title: "Branch Manager",
     nmls: "1218352",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(410) 271-6470",
     email: "amacbride@moderndaylending.com",
   },
@@ -396,7 +396,7 @@ const branchesData = [
     name: "David Keblaitis",
     title: "Branch Manager",
     nmls: "167980",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(734) 891-4348",
     email: "davek@cfmtg.com",
   },
@@ -404,7 +404,7 @@ const branchesData = [
     name: "Keith Converse",
     title: "Co-Branch Manager",
     nmls: "1892686",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(931) 368-4044",
     email: "KConverse@cfmtg.com",
   },
@@ -420,7 +420,7 @@ const branchesData = [
     name: "Tony Casteel",
     title: "Branch Manager",
     nmls: "1844704",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(770) 309-4154",
     email: "TCasteel@cfmtg.com",
   },
@@ -428,7 +428,7 @@ const branchesData = [
     name: "Adam DeSantis",
     title: "Branch Manager",
     nmls: "870107",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(443) 465-1050",
     email: "adesantis@cfmtg.com",
   },
@@ -476,7 +476,7 @@ const branchesData = [
     name: "Chuck Clapper",
     title: "Branch Manager",
     nmls: "376378",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(240) 602-5511",
     email: "CClapper@cfmtg.com",
   },
@@ -484,7 +484,7 @@ const branchesData = [
     name: "Christie Elliott",
     title: "Branch Manager",
     nmls: "1998136",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(678) 300-6913",
     email: "christie.elliott@cfmtg.com",
   },
@@ -508,7 +508,7 @@ const branchesData = [
     name: "James Waite",
     title: "Branch Operations Manager",
     nmls: "1286031",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(813) 967-8343",
     email: "jwaite@goodwinmg.com",
   },
@@ -516,7 +516,7 @@ const branchesData = [
     name: "Clint Madison",
     title: "Loan Officer",
     nmls: "219274",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(415) 606-2244",
     email: "CMadison@cfmtg.com",
   },
@@ -532,7 +532,7 @@ const branchesData = [
     name: "Tom Banducci",
     title: "Branch Manager",
     nmls: "290222",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(415) 606-7850",
     email: "tbanducci@cfmtg.com",
   },
@@ -556,7 +556,7 @@ const branchesData = [
     name: "Marc Kade",
     title: "Branch Manager",
     nmls: "231670",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(614) 354-9424",
     email: "marc.kade@cfmtg.com",
   },
@@ -620,7 +620,7 @@ const branchesData = [
     name: "Tim Regan",
     title: "Branch Manager",
     nmls: "200865",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(732) 895-3210",
     email: "tregan@cfmtg.com",
   },
@@ -636,7 +636,7 @@ const branchesData = [
     name: "Zac Cook",
     title: "Branch Manager",
     nmls: "2111496",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(480) 406-2016",
     email: "Zac@cfmtg.com",
   },
@@ -652,7 +652,7 @@ const branchesData = [
     name: "René Stone",
     title: "Branch Manager",
     nmls: "227334",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(732) 245-9559",
     email: "rstone@cfmtg.com",
   },
@@ -668,7 +668,7 @@ const branchesData = [
     name: "Matthew Carmody",
     title: "Branch Manager",
     nmls: "880675",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(515) 321-8059",
     email: "MCarmody@cfmtg.com",
   },
@@ -724,7 +724,7 @@ const branchesData = [
     name: "Isaiah Blas",
     title: "Branch Manager",
     nmls: "2125132",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(858) 652-0789",
     email: "iblas@cfmtg.com",
   },
@@ -732,7 +732,7 @@ const branchesData = [
     name: "Travis Genta",
     title: "Branch Manager",
     nmls: "65995",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(801) 420-5600",
     email: "travis.genta@cfmtg.com",
   },
@@ -748,7 +748,7 @@ const branchesData = [
     name: "Jason Grubba",
     title: "Regional Manager",
     nmls: "273104",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(262) 490-3923",
     email: "JGrubba@cfmtg.com",
   },
@@ -772,7 +772,7 @@ const branchesData = [
     name: "Jon Fuller",
     title: "Branch Manager",
     nmls: "2009329",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(619) 672-9318",
     email: "jon.fuller@cfmtg.com",
   },
@@ -804,7 +804,7 @@ const branchesData = [
     name: "Mike Certo",
     title: "Branch Manager",
     nmls: "260555",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(480) 296-6513",
     email: "MCerto@cfmtg.com",
   },
@@ -828,7 +828,7 @@ const branchesData = [
     name: "Tom Schwab",
     title: "Branch Manager",
     nmls: "77107",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(206) 817-1400",
     email: "tschwab@cfmtg.com",
   },
@@ -860,7 +860,7 @@ const branchesData = [
     name: "Juan Babani",
     title: "Branch Manager",
     nmls: "1411844",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(305) 915-6625",
     email: "babani@cfmtg.com",
   },
@@ -912,7 +912,7 @@ export default function Branches() {
   return (
     <div className="bg-[#f5f5f5] min-h-screen">
       {/* Hero */}
-      <div className="bg-gradient-to-b rounded-2xl from-[#021B2C] to-[#004a25] text-white py-16 sm:py-20 px-4 text-center">
+      <div className="bg-gradient-to-b rounded-2xl from-[#1470AF] to-[#004a25] text-white py-16 sm:py-20 px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 text-sm text-green-200 mb-6">
             <Building2 className="w-4 h-4" /> Nationwide Network
@@ -934,7 +934,7 @@ export default function Branches() {
         <div className="bg-green-50 rounded-2xl p-6 border border-green-200 mb-8">
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
             <div className="flex items-center gap-3">
-              <div className="bg-[#021B2C] p-2 rounded-full">
+              <div className="bg-[#1470AF] p-2 rounded-full">
                 <Users className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -945,7 +945,7 @@ export default function Branches() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="bg-[#021B2C] p-2 rounded-full">
+              <div className="bg-[#1470AF] p-2 rounded-full">
                 <Building2 className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -954,7 +954,7 @@ export default function Branches() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="bg-[#021B2C] p-2 rounded-full">
+              <div className="bg-[#1470AF] p-2 rounded-full">
                 <Phone className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -977,7 +977,7 @@ export default function Branches() {
                 setSearchTerm(e.target.value);
                 setVisibleCount(15);
               }}
-              className="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021B2C] bg-white text-sm"
+              className="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1470AF] bg-white text-sm"
             />
             {searchTerm && (
               <button
@@ -994,7 +994,7 @@ export default function Branches() {
               <button
                 key={role}
                 onClick={() => toggleFilter(role)}
-                className={`px-3 py-1 text-xs rounded-full border transition ${activeFilters.includes(role) ? "bg-[#021B2C] text-white border-[#021B2C]" : "bg-white text-gray-600 border-gray-300 hover:border-[#021B2C]"}`}
+                className={`px-3 py-1 text-xs rounded-full border transition ${activeFilters.includes(role) ? "bg-[#1470AF] text-white border-[#1470AF]" : "bg-white text-gray-600 border-gray-300 hover:border-[#1470AF]"}`}
               >
                 {role}
               </button>
@@ -1076,7 +1076,7 @@ export default function Branches() {
             <p className="text-gray-500">No branches found.</p>
             <button
               onClick={clearAll}
-              className="mt-3 text-[#021B2C] font-medium hover:underline text-sm"
+              className="mt-3 text-[#1470AF] font-medium hover:underline text-sm"
             >
               Clear filters
             </button>
@@ -1087,7 +1087,7 @@ export default function Branches() {
           <div className="text-center mt-6">
             <button
               onClick={() => setVisibleCount((v) => v + 15)}
-              className="bg-[#021B2C] hover:bg-[#003B1A] text-white px-8 py-3 rounded-xl font-semibold transition shadow-md"
+              className="bg-[#1470AF] hover:bg-[#003B1A] text-white px-8 py-3 rounded-xl font-semibold transition shadow-md"
             >
               Load More
             </button>
@@ -1095,7 +1095,7 @@ export default function Branches() {
         )}
 
         {/* CTA */}
-        <div className="mt-12 bg-[#021B2C] rounded-2xl p-8 text-white text-center">
+        <div className="mt-12 bg-[#1470AF] rounded-2xl p-8 text-white text-center">
           <h3 className="text-xl font-bold mb-2">
             Not sure which branch to contact?
           </h3>
@@ -1105,9 +1105,9 @@ export default function Branches() {
           </p>
           <a
             href="tel:7068293294"
-            className="inline-flex items-center gap-2 bg-white text-[#021B2C] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
+            className="inline-flex items-center gap-2 bg-white text-[#1470AF] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
           >
-            <Phone className="w-5 h-5" /> (559) 638-3338
+            <Phone className="w-5 h-5" /> (904) 735-1895
           </a>
         </div>
 

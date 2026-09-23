@@ -16,7 +16,7 @@ export default function Community() {
     <section className="bg-[#f5f5f5] py-16 sm:py-24 lg:py-30 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <div className="text-center lg:text-left">
-          <p className="text-[#021B2C] uppercase tracking-[3px] sm:tracking-[6px] font-bold text-md sm:text-xl mb-6 sm:mb-8">
+          <p className="text-[#1470AF] uppercase tracking-[3px] sm:tracking-[6px] font-bold text-md sm:text-xl mb-6 sm:mb-8">
             Who we are
           </p>
 
@@ -25,21 +25,25 @@ export default function Community() {
           </h2>
 
           <p className="text-[15px] text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-10 sm:mb-14">
-            I have been in the Mortgage Industry for the past 30 years and have
-            enjoyed every minute of it. I started as a “Temp Girl” for a small
-            Mortgage Banker in Visalia in 1988 and held the receptionist
-            position. I eventually went on to the positions of: Doc drawer,
-            shipper, loan processor and Loan Officer. At the end of my tenure
-            with this company in 2005, I was Vice President. My true passion in
-            this industry is being a “Loan Officer”. I enjoy meeting clients one
-            on one, guiding them one step at a time. Whether you need help
-            writing a credit letter, structuring a saving plan, or time to find
-            the right home, I am here to assist you.
+            I’m Tristan Pearrow, a 4th generation Sunshine State native and
+            dedicated mortgage loan officer. I hail from St. Augustine, the
+            Nation’s Oldest City, and studied at the University of Central
+            Florida and the University of North Florida where I earned my
+            Bachelors Degree. I currently live in St. Augustine with my two
+            rescue dogs and cat. Whether you’re purchasing your first home,
+            upgrading to accommodate an expanding family, building your real
+            estate portfolio - or refinancing to obtain more favorable terms or
+            remodeling funds, I’ll ensure your best interests are at the heart
+            of the loan solution I’ll choose for you. From application through
+            closing and every step along the way, you’ll be confident in my
+            truly simple, transparent and award-winning process. I understand
+            how important my clients loans are - and I am not satisfied until
+            you are delighted with the process.
           </p>
 
           <Link href="/contact-us">
             {" "}
-            <button className="bg-[#021B2C] w-full sm:w-auto flex items-center justify-center gap-3 text-white px-6 py-4 rounded-xl font-bold transition transform duration-300 hover:-translate-y-1">
+            <button className="bg-[#1470AF] w-full sm:w-auto flex items-center justify-center gap-3 text-white px-6 py-4 rounded-xl font-bold transition transform duration-300 hover:-translate-y-1">
               Contact
             </button>
           </Link>
@@ -70,12 +74,12 @@ export default function Community() {
         <>
           <div className="relative flex justify-center mt-4 lg:mt-0">
             <img
-              src="/img/we.jpg"
+              src="/img/trs.webp"
               alt="Community"
               className="w-full max-w-[500px] h-[250px] sm:h-[280px] lg:h-[300px] object-cover rounded-xl lg:rounded-none"
             />
 
-            <div className="absolute -bottom-10 sm:-bottom-12 left-1/2 -translate-x-1/2 bg-white rounded-[18px] sm:rounded-[22px] shadow-xl px-4 py-4 flex items-center gap-4 sm:gap-8 w-[90%] sm:w-[420px]">
+            <div className="absolute -bottom-12 sm:-bottom-16 left-1/2 -translate-x-1/2 bg-white rounded-[18px] sm:rounded-[22px] shadow-xl px-4 py-4 flex items-center gap-4 sm:gap-8 w-[90%] sm:w-[420px]">
               <div className="text-2xl sm:text-3xl">
                 <Handshake className=" text-[#ff9c78] h-8 w-8" />
               </div>

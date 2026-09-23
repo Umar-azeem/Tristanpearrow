@@ -142,7 +142,7 @@ function NavigationMenuDemo() {
       id="animated-navbar"
       className={`fixed top-0 left-0 right-0 z-50 px-4 py-3
         transition-all duration-500 ease-in-out
-        ${scrolled ? "bg-[#021B2C] shadow-md" : "bg-transparent"}`}
+        ${scrolled ? "bg-[#1470AF] shadow-md" : "bg-transparent"}`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -150,7 +150,7 @@ function NavigationMenuDemo() {
             <Button
               variant="default"
               size="icon"
-              className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#021B2C] h-10 w-10"
+              className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#1470AF] h-10 w-10"
             >
               <Menu className="h-10 w-10 text-2xl " />
             </Button>
@@ -164,7 +164,7 @@ function NavigationMenuDemo() {
               <Button
                 variant="default"
                 size="icon"
-                className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#021B2C] h-10 w-10"
+                className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#1470AF] h-10 w-10"
               >
                 <SquareArrowOutUpRight className="h-10 w-10 text-2xl " />
               </Button>
@@ -172,10 +172,10 @@ function NavigationMenuDemo() {
             <Button
               variant="default"
               size="icon"
-              className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#021B2C] h-10 w-10"
+              className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#1470AF] h-10 w-10"
             >
               <a
-                href="https://wa.me/15596383338"
+                href="https://wa.me/19047351895"
                 target="_blank"
                 rel="noreferrer"
                 className="flex gap-2 justify-center w-full px-4"
@@ -194,7 +194,7 @@ function NavigationMenuDemo() {
           </div>
           <SheetContent
             side="left"
-            className="w-[300px] sm:w-[350px] bg-[#021B2C] text-white border-white/10 p-0 overflow-y-auto"
+            className="w-[300px] sm:w-[450px] bg-[#1470AF] text-white border-white/10 p-0 overflow-y-auto"
           >
             <div className="flex h-28 items-center border-b border-white/10 px-1">
               <Link href="/" onClick={() => setIsOpen(false)}>
@@ -203,7 +203,7 @@ function NavigationMenuDemo() {
                   alt="logo"
                   width={100}
                   height={100}
-                  className="w-38 h-28 object-contain"
+                  className="w-48 h-38 object-contain"
                   priority
                 />
               </Link>
@@ -261,18 +261,18 @@ function NavigationMenuDemo() {
             </nav>
             <div className="lg:hidden flex flex-col w-full items-center gap-3 text-white ">
               <Link
-                href="https://wa.me/15596383338"
+                href="https://wa.me/19047351895"
                 className="flex gap-2 justify-center w-full px-4"
               >
-                <button className="bg-white flex justify-center gap-4 text-[#021B2C] px-6 w-full py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
-                  (559) 638-3338{" "}
+                <button className="bg-white flex justify-center gap-4 text-[#1470AF] px-6 w-full py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
+                  (904) 735-1895{" "}
                 </button>
               </Link>
               <Link
                 href="https://teamvb.shapeportal.com/ref/7"
                 className="w-full px-4"
               >
-                <button className="bg-white text-[#021B2C] px-6 w-full py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
+                <button className="bg-white text-[#1470AF] px-6 w-full py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
                   Apply Online
                 </button>
               </Link>
@@ -283,14 +283,14 @@ function NavigationMenuDemo() {
         <div className="hidden lg:flex ">
           <NavigationMenu>
             <NavigationMenuList className="gap-1 ">
-              <div className="flex h-20 items-center  ">
+              <div className="flex h-24 items-center  ">
                 <Link href="/" onClick={() => setIsOpen(false)}>
                   <Image
                     src="/img/logo.png"
                     alt="logo"
                     width={100}
                     height={100}
-                    className="w-32 h-24 object-contain"
+                    className="w-48 h-32 object-contain"
                     priority
                   />
                 </Link>
@@ -312,16 +312,16 @@ function NavigationMenuDemo() {
                           <a
                             href={program.href}
                             rel="noreferrer"
-                            className="flex items-start gap-3 rounded-lg p-3 text-sm transition-colors hover:bg-[#021B2C] hover:text-[#021B2C]-foreground group"
+                            className="flex items-start gap-3 rounded-lg p-3 text-sm transition-colors hover:bg-[#1470AF] hover:text-[#1470AF]-foreground group"
                           >
-                            <div className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md bg-[#021B2C]/10 text-[#021B2C] group-hover:bg-[#021B2C] group-hover:text-[white] transition-colors">
+                            <div className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md bg-[#1470AF]/10 text-[#1470AF] group-hover:bg-[#1470AF] group-hover:text-[white] transition-colors">
                               <program.icon className="h-4 w-4" />
                             </div>
                             <div className="flex flex-col gap-0.5">
-                              <div className="font-semibold leading-none  text-[#021B2C]">
+                              <div className="font-semibold leading-none  text-[#1470AF]">
                                 {program.title}
                               </div>
-                              <div className="line-clamp-2 text-xs leading-snug text-[#021B2C]">
+                              <div className="line-clamp-2 text-xs leading-snug text-[#1470AF]">
                                 {program.description}
                               </div>
                             </div>
@@ -346,16 +346,16 @@ function NavigationMenuDemo() {
           </NavigationMenu>
         </div>
         <div className="hidden lg:flex items-center gap-3 text-white py-4">
-          <Link href="tel:+15596383338" className="flex gap-2 justify-center ">
+          <Link href="tel:+19047351895" className="flex gap-2 justify-center ">
             <PhoneCall />
-            <h3>559-638-3338 </h3>
+            <h3>904-735-1895 </h3>
           </Link>
           <Link
             href="https://teamvb.shapeportal.com/ref/7"
             target="_blank"
             className="flex gap-2 justify-center "
           >
-            <button className="bg-white text-[#021B2C] px-6 py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
+            <button className="bg-white text-[#1470AF] px-6 py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
               Apply Now
             </button>
           </Link>

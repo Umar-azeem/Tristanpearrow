@@ -28,7 +28,7 @@ function buildPhotoUrl(name: string): string {
 }
 
 const avatarColors = [
-  "#021B2C",
+  "#1470AF",
   "#004a25",
   "#1a7a4a",
   "#2d8a5e",
@@ -114,7 +114,7 @@ const loanOfficersData = [
     name: "Michael Liguori",
     title: "Branch Manager",
     nmls: "1819838",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(516) 509-9062",
     email: "mliguori@moderndaylending.com",
   },
@@ -162,7 +162,7 @@ const loanOfficersData = [
     name: "Ansar Khan",
     title: "Loan Officer",
     nmls: "1636580",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(814) 270-8354",
     email: "AKhan@cfmtg.com",
   },
@@ -218,7 +218,7 @@ const loanOfficersData = [
     name: "Nathan Werdowatz",
     title: "Loan Officer",
     nmls: "2559541",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(858) 688-3254",
     email: "Nathan.Werdowatz@cfmtg.com",
   },
@@ -226,7 +226,7 @@ const loanOfficersData = [
     name: "Brett Jerhoff",
     title: "Production Manager",
     nmls: "307368",
-    office: "(559) 638-3338 x 1021",
+    office: "(904) 735-1895 x 1021",
     cell: "(619) 847-6196",
     email: "bjerhoff@cfmtg.com",
   },
@@ -234,7 +234,7 @@ const loanOfficersData = [
     name: "Donesha Avance",
     title: "Senior Mortgage Specialist",
     nmls: "1644512",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(470) 617-4470",
     email: "davance@cfmtg.com",
   },
@@ -314,7 +314,7 @@ const loanOfficersData = [
     name: "Richard Terzo",
     title: "Loan Officer",
     nmls: "1017874",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(843) 503-3023",
     email: "RTerzo@cfmtg.com",
   },
@@ -346,7 +346,7 @@ const loanOfficersData = [
     name: "Adam DeSantis",
     title: "Branch Manager",
     nmls: "870107",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(443) 465-1050",
     email: "adesantis@cfmtg.com",
   },
@@ -370,7 +370,7 @@ const loanOfficersData = [
     name: "Elijah Aldinger",
     title: "SVP Branch Manager",
     nmls: "244976",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(714) 914-3661",
     email: "Elijah@cfmtg.com",
   },
@@ -410,7 +410,7 @@ const loanOfficersData = [
     name: "Tom Schwab",
     title: "Branch Manager",
     nmls: "77107",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(206) 817-1400",
     email: "tschwab@cfmtg.com",
   },
@@ -426,7 +426,7 @@ const loanOfficersData = [
     name: "Robert Krowel",
     title: "Branch Sales Manager",
     nmls: "213875",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(951) 756-3748",
     email: "RKrowel@cfmtg.com",
   },
@@ -450,7 +450,7 @@ const loanOfficersData = [
     name: "Maricarmen Aponte",
     title: "Loan Officer",
     nmls: "1874292",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(689) 309-9009",
     email: "MAponte@cfmtg.com",
   },
@@ -522,7 +522,7 @@ const loanOfficersData = [
     name: "David Trbovich",
     title: "Senior Loan Officer",
     nmls: "1332192",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(480) 776-7649",
     email: "DavidT@cfmtg.com",
   },
@@ -570,7 +570,7 @@ const loanOfficersData = [
     name: "Jennifer Gonzalez",
     title: "TheCondoLendingTeam | Senior Loan Officer",
     nmls: "410251",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(786) 879-0383",
     email: "jennifer@cfmtg.com",
   },
@@ -610,7 +610,7 @@ const loanOfficersData = [
     name: "Reggie Sequeira",
     title: "Loan Officer",
     nmls: "1824815",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(714) 206-5504",
     email: "rsequeira@cfmtg.com",
   },
@@ -626,7 +626,7 @@ const loanOfficersData = [
     name: "Ruben Romero",
     title: "Branch Manager",
     nmls: "263947",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(818) 253-5795",
     email: "RRomero@cfmtg.com",
   },
@@ -642,7 +642,7 @@ const loanOfficersData = [
     name: "Lucia Hreso",
     title: "Loan Officer Assistant",
     nmls: "2507647",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(719) 231-2270",
     email: "Lucia@cfmtg.com",
   },
@@ -650,7 +650,7 @@ const loanOfficersData = [
     name: "Adam MacBride",
     title: "Branch Manager",
     nmls: "1218352",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(410) 271-6470",
     email: "amacbride@moderndaylending.com",
   },
@@ -674,7 +674,7 @@ const loanOfficersData = [
     name: "Tony Casteel",
     title: "Branch Manager",
     nmls: "1844704",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(770) 309-4154",
     email: "TCasteel@cfmtg.com",
   },
@@ -682,7 +682,7 @@ const loanOfficersData = [
     name: "Chuck Clapper",
     title: "Branch Manager",
     nmls: "376378",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(240) 602-5511",
     email: "CClapper@cfmtg.com",
   },
@@ -714,7 +714,7 @@ const loanOfficersData = [
     name: "Zulema Ruiz",
     title: "Branch Manager",
     nmls: "387854",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(305) 815-2003",
     email: "zulema@constantlending.net",
   },
@@ -730,7 +730,7 @@ const loanOfficersData = [
     name: "Jason Grubba",
     title: "Regional Manager",
     nmls: "273104",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(262) 490-3923",
     email: "JGrubba@cfmtg.com",
   },
@@ -762,7 +762,7 @@ const loanOfficersData = [
     name: "Steve Deeds",
     title: "Loan Officer",
     nmls: "121238",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(206) 387-3268",
     email: "SDeeds@cfmtg.com",
   },
@@ -778,7 +778,7 @@ const loanOfficersData = [
     name: "Michael Fawver",
     title: "Branch Sales Manager",
     nmls: "231994",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(562) 754-4744",
     email: "MFawver@cfmtg.com",
   },
@@ -794,7 +794,7 @@ const loanOfficersData = [
     name: "Ralph Maza",
     title: "Loan Officer",
     nmls: "1210315",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(808) 855-8685",
     email: "rmaza@cfmtg.com",
   },
@@ -818,7 +818,7 @@ const loanOfficersData = [
     name: "Jenn Wagner",
     title: "Loan Officer",
     nmls: "2075644",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(858) 945-7152",
     email: "jenn.wagner@cfmtg.com",
   },
@@ -834,7 +834,7 @@ const loanOfficersData = [
     name: "Travis Genta",
     title: "Branch Manager",
     nmls: "65995",
-    office: "(559) 638-3338",
+    office: "(904) 735-1895",
     cell: "(801) 420-5600",
     email: "travis.genta@cfmtg.com",
   },
@@ -919,7 +919,7 @@ export default function Find() {
   return (
     <div className="bg-[#f5f5f5] min-h-screen">
       {/* Hero */}
-      <div className="bg-gradient-to-b rounded-2xl from-[#021B2C] to-[#004a25] text-white py-16 sm:py-20 px-4 text-center">
+      <div className="bg-gradient-to-b rounded-2xl from-[#1470AF] to-[#004a25] text-white py-16 sm:py-20 px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 text-sm text-green-200 mb-6">
             <Users className="w-4 h-4" /> Find Your Loan Officer
@@ -961,7 +961,7 @@ export default function Find() {
         <div className="bg-green-50 rounded-2xl p-6 border border-green-200 mb-8">
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
             <div className="flex items-center gap-3">
-              <div className="bg-[#021B2C] p-2 rounded-full">
+              <div className="bg-[#1470AF] p-2 rounded-full">
                 <Users className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -972,7 +972,7 @@ export default function Find() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="bg-[#021B2C] p-2 rounded-full">
+              <div className="bg-[#1470AF] p-2 rounded-full">
                 <Building2 className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -981,7 +981,7 @@ export default function Find() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="bg-[#021B2C] p-2 rounded-full">
+              <div className="bg-[#1470AF] p-2 rounded-full">
                 <Phone className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -1004,8 +1004,8 @@ export default function Find() {
                 onClick={() => toggleFilter(role)}
                 className={`px-3 py-1 text-xs rounded-full border transition ${
                   activeFilters.includes(role)
-                    ? "bg-[#021B2C] text-white border-[#021B2C]"
-                    : "bg-white text-gray-600 border-gray-300 hover:border-[#021B2C]"
+                    ? "bg-[#1470AF] text-white border-[#1470AF]"
+                    : "bg-white text-gray-600 border-gray-300 hover:border-[#1470AF]"
                 }`}
               >
                 {role}
@@ -1072,14 +1072,14 @@ export default function Find() {
                 <div className="flex gap-2 mt-3">
                   <a
                     href={`mailto:${officer.email}`}
-                    className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-white bg-[#021B2C] rounded-lg hover:bg-[#004a25] transition"
+                    className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-white bg-[#1470AF] rounded-lg hover:bg-[#004a25] transition"
                   >
                     <Mail className="w-3.5 h-3.5" /> Email
                   </a>
                   {officer.cell && (
                     <a
                       href={`tel:${officer.cell.replace(/\D/g, "")}`}
-                      className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-[#021B2C] bg-green-50 rounded-lg hover:bg-green-100 transition"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-[#1470AF] bg-green-50 rounded-lg hover:bg-green-100 transition"
                     >
                       <Phone className="w-3.5 h-3.5" /> Call
                     </a>
@@ -1095,7 +1095,7 @@ export default function Find() {
             <p className="text-gray-500">No loan officers found.</p>
             <button
               onClick={clearAll}
-              className="mt-3 text-[#021B2C] font-medium hover:underline text-sm"
+              className="mt-3 text-[#1470AF] font-medium hover:underline text-sm"
             >
               Clear filters
             </button>
@@ -1106,7 +1106,7 @@ export default function Find() {
           <div className="text-center mt-6">
             <button
               onClick={() => setVisibleCount((v) => v + 15)}
-              className="bg-[#021B2C] hover:bg-[#003B1A] text-white px-8 py-3 rounded-xl font-semibold transition shadow-md"
+              className="bg-[#1470AF] hover:bg-[#003B1A] text-white px-8 py-3 rounded-xl font-semibold transition shadow-md"
             >
               Load More
             </button>
@@ -1114,7 +1114,7 @@ export default function Find() {
         )}
 
         {/* CTA */}
-        <div className="mt-12 bg-[#021B2C] rounded-2xl p-8 text-white text-center">
+        <div className="mt-12 bg-[#1470AF] rounded-2xl p-8 text-white text-center">
           <h3 className="text-xl font-bold mb-2">
             Not sure which loan officer to contact?
           </h3>
@@ -1124,9 +1124,9 @@ export default function Find() {
           </p>
           <a
             href="tel:7068293294"
-            className="inline-flex items-center gap-2 bg-white text-[#021B2C] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
+            className="inline-flex items-center gap-2 bg-white text-[#1470AF] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
           >
-            <Phone className="w-5 h-5" /> (559) 638-3338
+            <Phone className="w-5 h-5" /> (904) 735-1895
           </a>
         </div>
 

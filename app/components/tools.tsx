@@ -289,7 +289,7 @@ export default function Tools() {
             type="number"
             value={inputValue}
             onChange={(e) => handleInputChange(toolId, key, e.target.value)}
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021B2C] focus:border-transparent bg-gray-50"
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1470AF] focus:border-transparent bg-gray-50"
             step="any"
           />
         </div>
@@ -332,7 +332,7 @@ export default function Tools() {
           return (
             <div key={key} className="mb-3 last:mb-0">
               <div className="text-sm text-gray-600">{label}</div>
-              <div className="text-2xl font-bold text-[#021B2C]">
+              <div className="text-2xl font-bold text-[#1470AF]">
                 {displayValue}
               </div>
             </div>
@@ -345,7 +345,7 @@ export default function Tools() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-b from-[#021B2C] to-[#004d26] text-white rounded-2xl py-16 px-4">
+      <div className="bg-gradient-to-b from-[#1470AF] to-[#004d26] text-white rounded-2xl py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 flex gap-3 justify-center p-4">
             <ToolCase className="w-10 h-10" />
@@ -367,7 +367,7 @@ export default function Tools() {
             return (
               <div
                 key={tool.id}
-                className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition hover:border-[#021B2C] cursor-pointer"
+                className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition hover:border-[#1470AF] cursor-pointer"
                 onClick={() => {
                   document
                     .getElementById(tool.id)
@@ -375,12 +375,12 @@ export default function Tools() {
                   calculateTool(tool.id);
                 }}
               >
-                <Icon className="w-10 h-10 text-[#021B2C] mb-3" />
+                <Icon className="w-10 h-10 text-[#1470AF] mb-3" />
                 <h3 className="font-semibold text-gray-900 mb-1">
                   {tool.title}
                 </h3>
                 <p className="text-sm text-gray-600 mb-3">{tool.description}</p>
-                <button className="text-[#021B2C] font-medium text-sm flex items-center gap-1 hover:gap-2 transition">
+                <button className="text-[#1470AF] font-medium text-sm flex items-center gap-1 hover:gap-2 transition">
                   Launch <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
@@ -400,7 +400,7 @@ export default function Tools() {
               className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 sm:p-8 mb-8 scroll-mt-4"
             >
               <div className="flex items-start gap-3 mb-6">
-                <Icon className="w-8 h-8 text-[#021B2C] mt-1" />
+                <Icon className="w-8 h-8 text-[#1470AF] mt-1" />
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900">
                     {tool.title}
@@ -415,7 +415,7 @@ export default function Tools() {
                   {renderInputs(tool.id, defaultInputs)}
                   <button
                     onClick={() => calculateTool(tool.id)}
-                    className="w-full bg-[#021B2C] hover:bg-[#004d26] text-white font-semibold py-3 rounded-lg transition"
+                    className="w-full bg-[#1470AF] hover:bg-[#004d26] text-white font-semibold py-3 rounded-lg transition"
                   >
                     Calculate
                   </button>
@@ -459,7 +459,7 @@ export default function Tools() {
         })}
 
         {/* Disclaimer */}
-        <div className="bg-gray-50 border-l-4 border-[#021B2C] p-6 rounded-lg">
+        <div className="bg-gray-50 border-l-4 border-[#1470AF] p-6 rounded-lg">
           <p className="text-sm text-gray-600 leading-relaxed">
             <strong>Disclaimer:</strong> {toolData.disclaimer}
           </p>

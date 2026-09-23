@@ -8,28 +8,28 @@ import Link from "next/link";
 
 const socialLinks = [
   {
-    id: "facebook",
-    src: "https://api.iconify.design/uim:facebook-f.svg?color=%23E46A52",
-    alt: "Facebook",
-    url: "https://www.facebook.com/VeronicaBarraganLender/",
+    id: "youtube",
+    src: "https://api.iconify.design/simple-icons:youtube.svg?color=%23E46A52",
+    alt: "YouTube",
+    url: "https://www.youtube.com/@loanwolfmoney",
   },
   {
     id: "instagram",
     src: "https://api.iconify.design/uim:instagram.svg?color=%23E46A52",
     alt: "Instagram",
-    url: "https://instagram.com/homeloansbyveronica/",
+    url: "http://instagram.com/loanwolfmoney",
   },
-  // {
-  //   id: "linkedin",
-  //   src: "https://api.iconify.design/uim:linkedin-alt.svg?color=%23004D22",
-  //   alt: "LinkedIn",
-  //   url: "mailto:Veronica@TeamVB.Net",
-  // },
   {
-    id: "google",
-    src: "https://api.iconify.design/simple-icons:google.svg?color=%23E46A52",
-    alt: "Google",
-    url: "",
+    id: "tiktok",
+    src: "https://api.iconify.design/simple-icons:tiktok.svg?color=%23E46A52",
+    alt: "TikTok",
+    url: "https://www.tiktok.com/@loanwolfmoney",
+  },
+  {
+    id: "facebook",
+    src: "https://api.iconify.design/uim:facebook-f.svg?color=%23E46A52",
+    alt: "Facebook",
+    url: "https://www.facebook.com/loanswithtristan",
   },
 ];
 
@@ -64,11 +64,11 @@ Message:
 ${message || "No additional message provided."}
 
 ---
-This inquiry was sent from the Veronica Barragan Mortgage website.`,
+This inquiry was sent from the Tristan Pearrow Mortgage website.`,
     );
 
     window.open(
-      `mailto:LBaird@cfmtg.com?subject=${emailSubject}&body=${emailBody}`,
+      `mailto:Tristanpearrow@gmial.com?subject=${emailSubject}&body=${emailBody}`,
       "_blank",
     );
 
@@ -78,10 +78,10 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
 
   if (submitted) {
     return (
-      <div className="min-h-screen bg-[#021B2C] flex items-center justify-center ">
+      <div className="min-h-screen bg-[#1470AF] flex items-center justify-center ">
         <div className="max-w-2xl mx-auto bg-white shadow-lg p-8 border border-slate-200 rounded-2xl text-center">
           <div className="w-16 h-16 bg-green-100 flex items-center justify-center mx-auto mb-4 rounded-full">
-            <CheckCircle2 className="w-8 h-8 text-[#021B2C]" />
+            <CheckCircle2 className="w-8 h-8 text-[#1470AF]" />
           </div>
           <h3 className="text-2xl font-bold text-slate-900 mb-2">
             Message Ready!
@@ -92,10 +92,10 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
           <p className="text-slate-500 text-sm mb-6">
             If it didn{`'`}t open, please contact us directly at{" "}
             <a
-              href="mailto:Veronica@TeamVB.Net"
-              className="text-[#021B2C] underline font-medium"
+              href="mailto:Tristanpearrow@gmial.com"
+              className="text-[#1470AF] underline font-medium"
             >
-              Veronica@TeamVB.Net
+              Tristanpearrow@gmial.com
             </a>
           </p>
           <Button
@@ -123,14 +123,14 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
           }}
         />
 
-        <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#011829] to-[#011829]  opacity-65" />
+        <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#1470AF] to-[#2ea2f0]  opacity-65" />
 
         <div className="relative z-10 max-w-4xl mx-auto  p-13">
           <p className="text-green-300 uppercase tracking-[4px] font-bold text-xs sm:text-sm mb-3">
-            Licensed Mortgage Broker
+            Licensed Mortgage Loan Officer
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
-            Contact Home Loan Group
+            Contact Tristan Pearrow
           </h1>
           <p className="text-xl text-gray-200 max-w-2xl mx-auto font-light">
             Ready for a clear, straightforward mortgage plan? Let&apos;s
@@ -148,36 +148,36 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
               </h2>
               <p className="text-gray-600 leading-relaxed text-[15px]">
                 You&apos;re not just filling out a form. You&apos;re starting a
-                conversation with an experienced real estate investor and senior
-                mortgage advisor.
+                conversation with an experienced mortgage loan officer dedicated
+                to your financial success.
               </p>
             </div>
 
             <div className="space-y-4">
-              <h3 className="font-semibold text-lg text-[#021B2C]">
+              <h3 className="font-semibold text-lg text-[#1470AF]">
                 Why Start the Conversation?
               </h3>
               <div className="flex gap-4">
-                <CheckCircle2 className="text-[#021B2C] w-5 h-5 mt-1 shrink-0" />
+                <CheckCircle2 className="text-[#1470AF] w-5 h-5 mt-1 shrink-0" />
                 <div>
                   <h4 className="font-medium text-sm sm:text-base">
                     Fast, Personalized Response
                   </h4>
                   <p className="text-gray-600 text-sm mt-1">
                     Get answers tailored to your situation, not a generic
-                    template is email.
+                    template email.
                   </p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <CheckCircle2 className="text-[#021B2C] w-5 h-5 mt-1 shrink-0" />
+                <CheckCircle2 className="text-[#1470AF] w-5 h-5 mt-1 shrink-0" />
                 <div>
                   <h4 className="font-medium text-sm sm:text-base">
                     No Obligation, No Pressure
                   </h4>
                   <p className="text-gray-600 text-sm mt-1">
                     This is about discovery and planning. I&apos;m here to
-                    provide clarity, not a heavy sales pitch .!
+                    provide clarity, not a heavy sales pitch.
                   </p>
                 </div>
               </div>
@@ -187,15 +187,15 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
               <h3 className="font-semibold text-lg">Other Ways to Connect</h3>
 
               <a
-                href="tel:+17068293294"
+                href="tel:+19047351895"
                 className="flex items-start gap-4 group"
               >
-                <div className="w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-[#021B2C] shrink-0 group-hover:bg-[#021B2C] group-hover:text-white transition">
+                <div className="w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-[#1470AF] shrink-0 group-hover:bg-[#1470AF] group-hover:text-white transition">
                   <Phone className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="font-bold text-lg text-gray-900 leading-tight group-hover:text-[#021B2C] transition">
-                    (559) 638-3338
+                  <p className="font-bold text-lg text-gray-900 leading-tight group-hover:text-[#1470AF] transition">
+                    (904) 735-1895
                   </p>
                   <p className="text-gray-500 text-xs mt-1">
                     Call or Text for a Quick Chat, any time, 7 days a week
@@ -204,15 +204,15 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
               </a>
 
               <a
-                href="mailto:LBaird@cfmtg.com"
+                href="mailto:Tristanpearrow@gmial.com"
                 className="flex items-start gap-4 group"
               >
-                <div className="w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-[#021B2C] shrink-0 group-hover:bg-[#021B2C] group-hover:text-white transition">
+                <div className="w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-[#1470AF] shrink-0 group-hover:bg-[#1470AF] group-hover:text-white transition">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="font-bold text-lg text-gray-900 leading-tight group-hover:text-[#021B2C] transition break-all">
-                    Veronica@TeamVB.Net
+                  <p className="font-bold text-lg text-gray-900 leading-tight group-hover:text-[#1470AF] transition break-all">
+                    Tristanpearrow@gmial.com
                   </p>
                   <p className="text-gray-500 text-xs mt-1">
                     Email for Detailed Inquiries
@@ -221,7 +221,7 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
               </a>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-[#021B2C] shrink-0">
+                <div className="w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-[#1470AF] shrink-0">
                   <Clock className="w-4 h-4" />
                 </div>
                 <div>
@@ -231,7 +231,7 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
                   <p className="text-gray-600 text-sm mt-1">
                     Mon – Sun: 8:30 AM – 7:00 PM{" "}
                     <span className="text-gray-400 font-medium text-xs block sm:inline sm:ml-1">
-                      (Central Standard Time)
+                      (Eastern Standard Time)
                     </span>
                   </p>
                 </div>
@@ -249,7 +249,7 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
                     href={icon.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full border border-gray-400 bg-white flex items-center justify-center hover:bg-[#021B2C] transition group"
+                    className="w-10 h-10 rounded-full border border-gray-400 bg-white flex items-center justify-center hover:bg-[#1470AF] transition group"
                     aria-label={icon.alt}
                   >
                     <Image
@@ -274,19 +274,19 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
 
               <div className="flex flex-wrap gap-3 mb-6">
                 <a
-                  href="mailto:Veronica@TeamVB.Net"
+                  href="mailto:Tristanpearrow@gmial.com"
                   className="flex items-center gap-2 text-xs text-slate-600 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-full transition-colors"
                 >
                   <Mail className="w-3.5 h-3.5" />
-                  Veronica@TeamVB.Net
+                  Tristanpearrow@gmial.com
                 </a>
 
                 <a
-                  href="tel:+15596383338"
+                  href="tel:+19047351895"
                   className="flex items-center gap-2 text-xs text-slate-600 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-full transition-colors"
                 >
                   <Phone className="w-3.5 h-3.5" />
-                  (559) 638-3338
+                  (904) 735-1895
                 </a>
               </div>
 
@@ -300,7 +300,7 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
                       name="firstName"
                       type="text"
                       required
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021B2C] bg-gray-50"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1470AF] bg-gray-50"
                       placeholder="John"
                     />
                   </div>
@@ -312,7 +312,7 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
                       name="lastName"
                       type="text"
                       required
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021B2C] bg-gray-50"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1470AF] bg-gray-50"
                       placeholder="Doe"
                     />
                   </div>
@@ -327,7 +327,7 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
                       name="email"
                       type="email"
                       required
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021B2C] bg-gray-50"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1470AF] bg-gray-50"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -339,7 +339,7 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
                       name="phone"
                       type="tel"
                       required
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021B2C] bg-gray-50"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1470AF] bg-gray-50"
                       placeholder="(555) 123-4567"
                     />
                   </div>
@@ -352,7 +352,7 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
                   <select
                     name="state"
                     required
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021B2C] bg-gray-50 text-slate-900"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1470AF] bg-gray-50 text-slate-900"
                   >
                     <option value="">Select a state...</option>
                     <option value="AL">Alabama</option>
@@ -415,7 +415,7 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
                   <select
                     name="primaryGoal"
                     required
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021B2C] bg-gray-50 text-slate-900"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1470AF] bg-gray-50 text-slate-900"
                   >
                     <option value="">Select a goal...</option>
                     <option value="Home Purchase">Home Purchase</option>
@@ -448,7 +448,7 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
                     name="message"
                     required
                     rows={4}
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021B2C] bg-gray-50 resize-none"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1470AF] bg-gray-50 resize-none"
                     placeholder="Tell me about your mortgage needs..."
                   ></textarea>
                 </div>
@@ -456,7 +456,7 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#021B2C] hover:bg-[#f85d3e] text-white font-semibold py-6 rounded-xl disabled:opacity-70 transition transform duration-300 hover:-translate-y-0.5 shadow-md"
+                  className="w-full bg-[#1470AF] hover:bg-[#f85d3e] text-white font-semibold py-6 rounded-xl disabled:opacity-70 transition transform duration-300 hover:-translate-y-0.5 shadow-md"
                 >
                   {isSubmitting ? "Opening Email..." : "Send Message"}
                 </Button>
@@ -476,23 +476,22 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
       <footer className="bg-white border-t border-gray-200 py-12 text-xs text-gray-500 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto space-y-4">
           <div className="flex flex-wrap items-start gap-x-6 gap-y-2 font-medium text-gray-700 text-sm">
-            <span>NMLS ID: 1779283</span>
+            <span>NMLS ID: 1878186</span>
             <Link
-              href="https://wa.me/15596383338"
+              href="https://wa.me/19047351895"
               className="flex gap-2 w-full px-4"
             >
-              <button className="">(559) 638-3338 </button>
+              <button className="">(904) 735-1895 </button>
             </Link>
           </div>
           <p className="leading-relaxed">
-            <strong>Equal Housing Opportunity:</strong> Veronica Barragan
+            <strong>Equal Housing Opportunity:</strong> Tristan Pearrow
             Mortgage is an Equal Housing Opportunity lender. We are pledged to
             the letter and spirit of U.S. policy for the achievement of equal
             housing opportunity throughout the Nation.
           </p>
           <p className="text-gray-400 leading-relaxed">
-            NMLS # 1779283 — Licensed in AL, CA, FL, GA, MO, NC, OR, PA, SC, TN,
-            TX, VA.
+            NMLS # 1878186 — Licensed in FL.
           </p>
         </div>
       </footer>

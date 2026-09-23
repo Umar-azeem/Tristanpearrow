@@ -31,7 +31,7 @@ const getIconComponent = (
 
 const renderIcon = (
   iconName: string,
-  className: string = "w-8 h-8 text-[#021B2C]",
+  className: string = "w-8 h-8 text-[#1470AF]",
 ) => {
   const Icon = getIconComponent(iconName);
   return <Icon className={className} />;
@@ -103,11 +103,11 @@ function LoanProgramsContent() {
               <div
                 key={program.id}
                 onClick={() => handleProgramClick(program)}
-                className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-[#021B2C] transition-all cursor-pointer group"
+                className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-[#1470AF] transition-all cursor-pointer group"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <Icon className="w-8 h-8 text-[#021B2C]" />
-                  <h2 className="text-lg font-semibold text-gray-900 group-hover:text-[#021B2C] transition">
+                  <Icon className="w-8 h-8 text-[#1470AF]" />
+                  <h2 className="text-lg font-semibold text-gray-900 group-hover:text-[#1470AF] transition">
                     {program.title}
                   </h2>
                 </div>
@@ -128,8 +128,8 @@ function LoanProgramsContent() {
             </button>
 
             <div className="flex items-start gap-4 mb-6">
-              <div className="p-3 bg-[#021B2C]/10 rounded-full">
-                {renderIcon(selectedProgram.icon, "w-8 h-8 text-[#021B2C]")}
+              <div className="p-3 bg-[#1470AF]/10 rounded-full">
+                {renderIcon(selectedProgram.icon, "w-8 h-8 text-[#1470AF]")}
               </div>
               <div>
                 <h2 className="text-2xl font-bold text-gray-900">
@@ -161,7 +161,7 @@ function LoanProgramsContent() {
                             key={idx}
                             className="flex items-start gap-2 text-gray-700"
                           >
-                            <Icons.CheckCircle className="w-5 h-5 text-[#021B2C] flex-shrink-0 mt-0.5" />
+                            <Icons.CheckCircle className="w-5 h-5 text-[#1470AF] flex-shrink-0 mt-0.5" />
                             <span>{feature}</span>
                           </li>
                         ),
@@ -173,8 +173,8 @@ function LoanProgramsContent() {
               {selectedProgram.idealFor &&
                 Array.isArray(selectedProgram.idealFor) &&
                 selectedProgram.idealFor.length > 0 && (
-                  <div className="mt-6 p-4 bg-[#F0F7F3] rounded-lg border border-[#021B2C]/20">
-                    <h3 className="text-md font-semibold text-[#021B2C] mb-2">
+                  <div className="mt-6 p-4 bg-[#F0F7F3] rounded-lg border border-[#1470AF]/20">
+                    <h3 className="text-md font-semibold text-[#1470AF] mb-2">
                       Ideal For
                     </h3>
                     <ul className="flex flex-wrap gap-2 list-none p-0">
@@ -195,7 +195,7 @@ function LoanProgramsContent() {
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center px-6 py-3 bg-[#021B2C] hover:bg-[#004d26] text-white font-semibold rounded-lg transition"
+                  className="inline-flex items-center px-6 py-3 bg-[#1470AF] hover:bg-[#004d26] text-white font-semibold rounded-lg transition"
                 >
                   Get Started <Icons.ArrowRight className="ml-2 w-4 h-4" />
                 </Link>

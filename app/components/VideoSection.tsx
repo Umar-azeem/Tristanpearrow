@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
-// import Image from "next/image";
 
 // ---------- Types ----------
 interface Video {
@@ -9,59 +8,73 @@ interface Video {
   title: string;
   description: string;
   duration: string;
-  src: string;
+  youtubeId: string;
 }
 
-// ---------- Video Data (7 items) ----------
+// ---------- Video Data (9 items) ----------
 const VIDEO_DATA: Video[] = [
   {
     id: "1",
-    title: "Adrian Yeebi",
-    description: "The Most Important Thing to Homebuyers",
-    duration: "4:32",
-    src: "/img/v8.mp4",
-  },
-  {
-    id: "2",
     title: "Sarah Mitchell",
     description: "Why I Chose This Mortgage Advisor",
     duration: "6:15",
-    src: "/img/v10.mp4",
+    youtubeId: "_T8LenZ2bZ4",
+  },
+  {
+    id: "2",
+    title: "Your Home is Sitting on Money ",
+    description: "The Most Important Thing to Homebuyers",
+    duration: "4:32",
+    youtubeId: "jEZVGCVxZec",
   },
   {
     id: "3",
-    title: "James Carter",
+    title: "First-Time",
     description: "First-Time Homebuyer Success Story",
     duration: "5:48",
-    src: "/img/v3.mp4",
+    youtubeId: "vF01D7iyox0",
   },
   {
     id: "4",
-    title: "Emily Rodriguez",
+    title: "Navigating",
     description: "Navigating the Mortgage Process with Ease",
     duration: "7:02",
-    src: "/img/v4.mp4",
+    youtubeId: "i6cU3bhLuj4",
   },
   {
     id: "5",
-    title: "Michael Thompson",
+    title: "Refinancing",
     description: "Refinancing Made Simple & Stress-Free",
     duration: "3:55",
-    src: "/img/v5.mp4",
+    youtubeId: "VTEO9-2yunw",
   },
   {
     id: "6",
-    title: "Jessica Lee",
+    title: "Building Wealth",
     description: "Building Wealth Through Real Estate",
     duration: "8:20",
-    src: "/img/v6.mp4",
+    youtubeId: "yA07k-BOMVI",
   },
   {
     id: "7",
-    title: "David Kim",
+    title: "Expert Advice",
     description: "Expert Advice for First-Time Investors",
     duration: "5:10",
-    src: "/img/v7.mp4",
+    youtubeId: "hWUCv0DN9q8",
+  },
+  {
+    id: "8",
+    title: "Mortgage Journey",
+    description: "A Mortgage Journey to Remember",
+    duration: "4:45",
+    youtubeId: "jEZVGCVxZec",
+  },
+  {
+    id: "9",
+    title: "Perfect Loan",
+    description: "Finding the Perfect Loan Solution",
+    duration: "5:30",
+    youtubeId: "hWUCv0DN9q8",
   },
 ];
 
@@ -69,12 +82,6 @@ const VIDEO_DATA: Video[] = [
 const PlayIcon = ({ className }: { className?: string }) => (
   <svg className={className} fill="currentColor" viewBox="0 0 24 24">
     <path d="M8 5v14l11-7z" />
-  </svg>
-);
-
-const PauseIcon = ({ className }: { className?: string }) => (
-  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
-    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
   </svg>
 );
 
@@ -118,18 +125,6 @@ const ChevronRightIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const VolumeOnIcon = ({ className }: { className?: string }) => (
-  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
-    <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
-  </svg>
-);
-
-const VolumeOffIcon = ({ className }: { className?: string }) => (
-  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
-    <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
-  </svg>
-);
-
 // ---------- Video Card (Instagram Reels Style) ----------
 const ReelCard = ({
   video,
@@ -138,62 +133,10 @@ const ReelCard = ({
   video: Video;
   onClick: (v: Video) => void;
 }) => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(true);
   const [isHovering, setIsHovering] = useState(false);
-
-  useEffect(() => {
-    const el = videoRef.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            el.play().catch(() => {});
-            setIsPlaying(true);
-          } else {
-            el.pause();
-            setIsPlaying(false);
-          }
-        });
-      },
-      { threshold: 0.4, rootMargin: "0px 0px -40px 0px" },
-    );
-
-    observer.observe(el);
-
-    return () => {
-      observer.disconnect();
-      el.pause();
-    };
-  }, []);
-
-  const handleVideoClick = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    const el = videoRef.current;
-    if (!el) return;
-
-    if (el.paused) {
-      el.play().catch(() => {});
-      setIsPlaying(true);
-    } else {
-      el.pause();
-      setIsPlaying(false);
-    }
-  };
 
   const handleCardClick = () => {
     onClick(video);
-  };
-
-  const toggleMute = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    const el = videoRef.current;
-    if (!el) return;
-    el.muted = !el.muted;
-    setIsMuted(el.muted);
   };
 
   return (
@@ -204,14 +147,15 @@ const ReelCard = ({
       onClick={handleCardClick}
       style={{ aspectRatio: "9 / 16" }}
     >
-      <video
-        ref={videoRef}
-        src={video.src}
-        muted={isMuted}
-        loop
-        playsInline
+      {/* YouTube thumbnail */}
+      <img
+        src={`https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg`}
+        alt={video.title}
         className="w-full h-full object-cover"
-        onClick={handleVideoClick}
+        onError={(e) => {
+          // Fallback to lower quality thumbnail if maxres doesn't exist
+          (e.target as HTMLImageElement).src = `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`;
+        }}
       />
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
@@ -219,28 +163,10 @@ const ReelCard = ({
       {isHovering && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/20 transition-opacity duration-300 pointer-events-none">
           <div className="w-12 h-12 rounded-full bg-white/90 text-slate-800 flex items-center justify-center shadow-lg transform transition-transform duration-300 hover:scale-110">
-            {isPlaying ? (
-              <PauseIcon className="w-5 h-5" />
-            ) : (
-              <PlayIcon className="w-5 h-5 ml-0.5" />
-            )}
+            <PlayIcon className="w-5 h-5 ml-0.5" />
           </div>
         </div>
       )}
-
-      <button
-        onClick={toggleMute}
-        className={`absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-black/50 text-white flex items-center justify-center backdrop-blur-sm transition-all duration-200 hover:bg-black/70 hover:scale-110 ${
-          isHovering ? "opacity-100" : "opacity-60"
-        }`}
-        aria-label={isMuted ? "Unmute" : "Mute"}
-      >
-        {isMuted ? (
-          <VolumeOffIcon className="w-4 h-4" />
-        ) : (
-          <VolumeOnIcon className="w-4 h-4" />
-        )}
-      </button>
 
       <span className="absolute top-3 left-3 z-10 bg-black/60 backdrop-blur-sm text-white text-[10px] font-medium px-2.5 py-1 rounded-full border border-white/10">
         {video.duration}
@@ -256,7 +182,7 @@ const ReelCard = ({
         <div className="flex items-center gap-1.5 mt-1.5">
           <span
             className="w-1.5 h-1.5 rounded-full"
-            style={{ background: "#021B2C" }}
+            style={{ background: "#1470AF" }}
           />
           <span className="text-[10px] text-white/50 font-medium tracking-wide uppercase">
             Reel
@@ -268,7 +194,7 @@ const ReelCard = ({
         className={`absolute inset-0 rounded-2xl pointer-events-none transition-opacity duration-300 ${
           isHovering ? "opacity-100" : "opacity-0"
         }`}
-        style={{ boxShadow: "inset 0 0 0 2px rgba(228, 106, 82, 0.5)" }}
+        style={{ boxShadow: "inset 0 0 0 2px rgba(20, 112, 175, 0.5)" }}
       />
     </div>
   );
@@ -282,31 +208,15 @@ const VideoModal = ({
   video: Video;
   onClose: () => void;
 }) => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isMuted, setIsMuted] = useState(true);
-
   useEffect(() => {
-    const el = videoRef.current;
-    if (el) {
-      el.play().catch(() => {});
-    }
     document.body.style.overflow = "hidden";
     return () => {
       document.body.style.overflow = "auto";
-      if (el) el.pause();
     };
   }, []);
 
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) onClose();
-  };
-
-  const toggleMute = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    const el = videoRef.current;
-    if (!el) return;
-    el.muted = !el.muted;
-    setIsMuted(el.muted);
   };
 
   return (
@@ -323,45 +233,28 @@ const VideoModal = ({
           <XIcon className="w-5 h-5" />
         </button>
 
-        <button
-          onClick={toggleMute}
-          className="absolute top-3 left-3 z-20 w-10 h-10 rounded-full bg-black/60 text-white hover:bg-black/80 transition-colors flex items-center justify-center backdrop-blur-sm border border-white/20"
-          aria-label={isMuted ? "Unmute" : "Mute"}
-        >
-          {isMuted ? (
-            <VolumeOffIcon className="w-5 h-5" />
-          ) : (
-            <VolumeOnIcon className="w-5 h-5" />
-          )}
-        </button>
-
         <div className="aspect-[9/16] w-full bg-black">
-          <video
-            ref={videoRef}
-            src={video.src}
-            muted={isMuted}
-            loop
-            playsInline
-            controls={false}
-            className="w-full h-full object-cover"
+          <iframe
+            width="100%"
+            height="100%"
+            src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=1&rel=0`}
+            title={video.title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full"
           />
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-5 pt-12">
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-5 pt-12 pointer-events-none">
           <h3 className="text-white font-bold text-lg">{video.title}</h3>
           <p className="text-white/70 text-sm mt-0.5">{video.description}</p>
           <div className="flex items-center gap-3 mt-2">
-            <span className="text-[#021B2C] text-xs font-semibold uppercase tracking-wider">
+            <span className="text-[#1470AF] text-xs font-semibold uppercase tracking-wider">
               {video.duration}
             </span>
             <span className="w-1 h-1 rounded-full bg-white/30" />
             <span className="text-white/40 text-xs">Client Story</span>
-          </div>
-        </div>
-
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 pointer-events-auto">
-            <PlayIcon className="w-8 h-8 text-white ml-1" />
           </div>
         </div>
       </div>
@@ -435,10 +328,10 @@ export default function VideoCarousel() {
           <div className="flex items-center gap-3 mb-1">
             <span
               className="w-1 h-8 rounded-full"
-              style={{ background: "#021B2C" }}
+              style={{ background: "#1470AF" }}
             />
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-800 tracking-tight">
-              Client <span style={{ color: "#021B2C" }}>Reels</span>
+              Client <span style={{ color: "#1470AF" }}>Reels</span>
             </h2>
           </div>
           <p className="text-sm text-slate-500 ml-4 pl-0.5">
@@ -450,11 +343,11 @@ export default function VideoCarousel() {
           <span className="relative flex h-2 w-2">
             <span
               className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
-              style={{ background: "#021B2C" }}
+              style={{ background: "#1470AF" }}
             />
             <span
               className="relative inline-flex rounded-full h-2 w-2"
-              style={{ background: "#021B2C" }}
+              style={{ background: "#1470AF" }}
             />
           </span>
           <span className="text-xs font-medium text-slate-600">
@@ -498,7 +391,7 @@ export default function VideoCarousel() {
           disabled={!showRightArrow}
           className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 shadow-lg -mr-4 ${
             showRightArrow
-              ? "bg-white text[#021B2C] hover:bg-slate-50 hover:scale-105 border border-slate-200"
+              ? "bg-white text-[#1470AF] hover:bg-slate-50 hover:scale-105 border border-slate-200"
               : "bg-slate-100 text-slate-300 cursor-not-allowed opacity-50"
           }`}
           aria-label="Scroll right"
@@ -510,11 +403,11 @@ export default function VideoCarousel() {
         </button>
       </div>
 
-      {/* Long Scroller - all ticks now #021B2C */}
+      {/* Progress Scroller */}
       <div className="mt-6 px-2">
         <div
           ref={trackRef}
-          className="relative w-full h-2 bg-[#021B2C]/20 rounded-full cursor-pointer overflow-visible"
+          className="relative w-full h-2 bg-[#1470AF]/20 rounded-full cursor-pointer overflow-visible"
           onClick={handleTrackClick}
         >
           {/* Filled progress */}
@@ -522,11 +415,11 @@ export default function VideoCarousel() {
             className="absolute left-0 top-0 h-full rounded-full transition-all duration-150"
             style={{
               width: `${scrollProgress * 100}%`,
-              background: "#021B2C",
+              background: "#1470AF",
             }}
           />
 
-          {/* Tick marks - all #021B2C */}
+          {/* Tick marks */}
           {VIDEO_DATA.map((_, i) => {
             const position = i / (VIDEO_DATA.length - 1);
             return (
@@ -535,7 +428,7 @@ export default function VideoCarousel() {
                 className="absolute top-1/2 -translate-y-1/2 w-1 h-4 rounded-full transition-colors duration-200"
                 style={{
                   left: `${position * 100}%`,
-                  background: "#021B2C",
+                  background: "#1470AF",
                   transform: "translateX(-50%) translateY(-50%)",
                 }}
               />
