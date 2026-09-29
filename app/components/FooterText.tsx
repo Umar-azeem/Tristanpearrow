@@ -18,8 +18,8 @@ const FooterText = () => {
         <p className="mt-6">For Licensing Information go to:</p>
 
         <p className="mt-6">
-          © {currentYear} VeronicaB.net. | All Rights Reserved. Veronica
-          Barragan NMLS# 328750 & Gold Standard Mortgage NMLS # 1779283
+          © {currentYear} Tristan.net. | All Rights Reserved. Tristan
+          Pearrow NMLS# 1878186 & Gold Standard Mortgage NMLS # 1878186
         </p>
       </div>
 
