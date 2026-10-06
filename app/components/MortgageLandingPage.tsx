@@ -40,7 +40,7 @@ const MortgageLandingPage = () => {
           </svg> */}
         </div>
 
-        <main className="relative z-10 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center px-4 sm:px-6 lg:px-8 pt-18 pb-20 gap-10">
+        <main className="relative z-10 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center px-4 sm:px-6 lg:px-8 pt-28 pb-20 gap-10">
           <div className="flex-1  max-w-2xl w-full text-center lg:text-left">
             <div className="hidden md:flex flex-col ">
               <p className=" text-md font-bold tracking-[0.2em] mb-6 uppercase">
