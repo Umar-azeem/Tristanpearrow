@@ -68,7 +68,7 @@ This inquiry was sent from the Tristan Pearrow Mortgage website.`,
     );
 
     window.open(
-      `mailto:Tristanpearrow@gmial.com?subject=${emailSubject}&body=${emailBody}`,
+      `mailto:tpearrow@genevafi.com?subject=${emailSubject}&body=${emailBody}`,
       "_blank",
     );
 
@@ -92,10 +92,10 @@ This inquiry was sent from the Tristan Pearrow Mortgage website.`,
           <p className="text-slate-500 text-sm mb-6">
             If it didn{`'`}t open, please contact us directly at{" "}
             <a
-              href="mailto:Tristanpearrow@gmial.com"
+              href="mailto:tpearrow@genevafi.com"
               className="text-[#1470AF] underline font-medium"
             >
-              Tristanpearrow@gmial.com
+              tpearrow@genevafi.com
             </a>
           </p>
           <Button
@@ -204,7 +204,7 @@ This inquiry was sent from the Tristan Pearrow Mortgage website.`,
               </a>
 
               <a
-                href="mailto:Tristanpearrow@gmial.com"
+                href="mailto:tpearrow@genevafi.com"
                 className="flex items-start gap-4 group"
               >
                 <div className="w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-[#1470AF] shrink-0 group-hover:bg-[#1470AF] group-hover:text-white transition">
@@ -212,7 +212,7 @@ This inquiry was sent from the Tristan Pearrow Mortgage website.`,
                 </div>
                 <div>
                   <p className="font-bold text-lg text-gray-900 leading-tight group-hover:text-[#1470AF] transition break-all">
-                    Tristanpearrow@gmial.com
+                    tpearrow@genevafi.com
                   </p>
                   <p className="text-gray-500 text-xs mt-1">
                     Email for Detailed Inquiries
@@ -274,11 +274,11 @@ This inquiry was sent from the Tristan Pearrow Mortgage website.`,
 
               <div className="flex flex-wrap gap-3 mb-6">
                 <a
-                  href="mailto:Tristanpearrow@gmial.com"
+                  href="mailto:tpearrow@genevafi.com"
                   className="flex items-center gap-2 text-xs text-slate-600 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-full transition-colors"
                 >
                   <Mail className="w-3.5 h-3.5" />
-                  Tristanpearrow@gmial.com
+                  tpearrow@genevafi.com
                 </a>
 
                 <a
@@ -485,10 +485,10 @@ This inquiry was sent from the Tristan Pearrow Mortgage website.`,
             </Link>
           </div>
           <p className="leading-relaxed">
-            <strong>Equal Housing Opportunity:</strong> Tristan Pearrow
-            Mortgage is an Equal Housing Opportunity lender. We are pledged to
-            the letter and spirit of U.S. policy for the achievement of equal
-            housing opportunity throughout the Nation.
+            <strong>Equal Housing Opportunity:</strong> Tristan Pearrow Mortgage
+            is an Equal Housing Opportunity lender. We are pledged to the letter
+            and spirit of U.S. policy for the achievement of equal housing
+            opportunity throughout the Nation.
           </p>
           <p className="text-gray-400 leading-relaxed">
             NMLS # 1878186 — Licensed in FL.

@@ -9,17 +9,18 @@ const FooterText = () => {
       <div>
         <hr className="border-gray-700 my-6 sm:my-10" />
         <p>
-          My team and I would love to help you get into a new home. Please
-          utilize the links below and contact our office if you have any
-          questions. We have helped thousands of individuals and families within
-          the Central Valley, and would love to help you, too…
+           I'm a 4th generation Sunshine State native and dedicated mortgage
+              loan officer. I hail from St. Augustine, the Nation{`'`}s Oldest City,
+              and studied at the University of Central Florida and the
+              University of North Florida where I earned my Bachelors Degree. I
+              currently live in St. Augustine with my two rescue dogs and cat.
         </p>
 
         <p className="mt-6">For Licensing Information go to:</p>
 
         <p className="mt-6">
-          © {currentYear} Tristan.net. | All Rights Reserved. Tristan
-          Pearrow NMLS# 1878186 & Gold Standard Mortgage NMLS # 1878186
+          © {currentYear} Tristan.net. | All Rights Reserved. Tristan Pearrow
+          NMLS# 1878186 & Geneva financial NMLS # 1878186
         </p>
       </div>
 

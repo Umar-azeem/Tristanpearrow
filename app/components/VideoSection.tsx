@@ -323,38 +323,38 @@ export default function VideoCarousel() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 bg-white">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
-        <div>
-          <div className="flex items-center gap-3 mb-1">
-            <span
-              className="w-1 h-8 rounded-full"
-              style={{ background: "#1470AF" }}
-            />
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-800 tracking-tight">
-              Client <span style={{ color: "#1470AF" }}>Reels</span>
-            </h2>
-          </div>
-          <p className="text-sm text-slate-500 ml-4 pl-0.5">
-            Real stories from homeowners who found their dream home
-          </p>
-        </div>
+    <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+  <div>
+    <div className="flex items-center gap-3 mb-1">
+      <span
+        className="w-1 h-8 rounded-full"
+        style={{ background: "#1470AF" }}
+      />
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-800 tracking-tight">
+        Mortgage <span style={{ color: "#1470AF" }}>Insights</span>
+      </h2>
+    </div>
+    <p className="text-sm text-slate-500 ml-4 pl-0.5">
+      Tristan breaks down mortgages, rates & the home-buying process — straight from the field
+    </p>
+  </div>
 
-        <div className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-full border border-slate-200/60 self-start sm:self-auto">
-          <span className="relative flex h-2 w-2">
-            <span
-              className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
-              style={{ background: "#1470AF" }}
-            />
-            <span
-              className="relative inline-flex rounded-full h-2 w-2"
-              style={{ background: "#1470AF" }}
-            />
-          </span>
-          <span className="text-xs font-medium text-slate-600">
-            {VIDEO_DATA.length} Stories
-          </span>
-        </div>
-      </div>
+  <div className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-full border border-slate-200/60 self-start sm:self-auto">
+    <span className="relative flex h-2 w-2">
+      <span
+        className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
+        style={{ background: "#1470AF" }}
+      />
+      <span
+        className="relative inline-flex rounded-full h-2 w-2"
+        style={{ background: "#1470AF" }}
+      />
+    </span>
+    <span className="text-xs font-medium text-slate-600">
+      {VIDEO_DATA.length} Videos
+    </span>
+  </div>
+</div>
 
       {/* Carousel */}
       <div className="relative">

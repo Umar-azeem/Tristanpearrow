@@ -140,9 +140,7 @@ export default function AboutPage() {
     },
   ];
 
-  const states = [
-    "FL",
-  ];
+  const states = ["FL"];
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -216,13 +214,26 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
               <p className="text-gray-700 leading-relaxed mb-4">
-                I{`'`}m Tristan Pearrow, a 4th generation Sunshine State native and dedicated mortgage loan officer. I hail from St. Augustine, the Nation's Oldest City, and studied at the University of Central Florida and the University of North Florida where I earned my Bachelors Degree. I currently live in St. Augustine with my two rescue dogs and cat.
+                I{`'`}m Tristan Pearrow, a 4th generation Sunshine State native
+                and dedicated mortgage loan officer. I hail from St. Augustine,
+                the Nation's Oldest City, and studied at the University of
+                Central Florida and the University of North Florida where I
+                earned my Bachelors Degree. I currently live in St. Augustine
+                with my two rescue dogs and cat.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Whether you{`'`}re purchasing your first home, upgrading to accommodate an expanding family, building your real estate portfolio - or refinancing to obtain more favorable terms or remodeling funds, I'll ensure your best interests are at the heart of the loan solution I'll choose for you. From application through closing and every step along the way, you'll be confident in my truly simple, transparent and award-winning process.
+                Whether you{`'`}re purchasing your first home, upgrading to
+                accommodate an expanding family, building your real estate
+                portfolio - or refinancing to obtain more favorable terms or
+                remodeling funds, I'll ensure your best interests are at the
+                heart of the loan solution I'll choose for you. From application
+                through closing and every step along the way, you'll be
+                confident in my truly simple, transparent and award-winning
+                process.
               </p>
               <p className="text-gray-700 leading-relaxed font-medium">
-                I understand how important my clients loans are - and I am not satisfied until you are delighted with the process.
+                I understand how important my clients loans are - and I am not
+                satisfied until you are delighted with the process.
               </p>
               <div className="mt-6 flex items-center gap-4">
                 <a
@@ -233,11 +244,11 @@ export default function AboutPage() {
                   (904) 735-1895
                 </a>
                 <a
-                  href="mailto:Tristanpearrow@gmial.com"
+                  href="mailto:tpearrow@genevafi.com"
                   className="text-[#1470AF] font-medium flex items-center gap-2"
                 >
                   <Icons.Mail className="w-4 h-4" />
-                  Tristanpearrow@gmial.com
+                  tpearrow@genevafi.com
                 </a>
               </div>
             </div>
@@ -247,10 +258,10 @@ export default function AboutPage() {
                 A TEAM YOU CAN TRUST
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                I would love to help you get into a new home. Please
-                utilize the links below and contact my office if you have any
-                questions. I have helped individuals and families
-                throughout Florida, and would love to help you, too…
+                I would love to help you get into a new home. Please utilize the
+                links below and contact my office if you have any questions. I
+                have helped individuals and families throughout Florida, and
+                would love to help you, too…
               </p>
             </div>
           </div>
@@ -282,7 +293,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="mb-16 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+        {/* <section className="mb-16 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
           <h2 className="text-2xl md:text-3xl font-bold text-[#08263d] mb-8 text-center">
             ME, & My Team
           </h2>
@@ -320,12 +331,21 @@ export default function AboutPage() {
                     My Journey in Mortgage
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
-                    I'm a 4th generation Sunshine State native and dedicated mortgage loan officer. I hail from St. Augustine, the Nation's Oldest City, and studied at the University of Central Florida and the University of North Florida where I earned my Bachelors Degree. I currently live in St. Augustine with my two rescue dogs and cat.
+                    I'm a 4th generation Sunshine State native and dedicated
+                    mortgage loan officer. I hail from St. Augustine, the
+                    Nation's Oldest City, and studied at the University of
+                    Central Florida and the University of North Florida where I
+                    earned my Bachelors Degree. I currently live in St.
+                    Augustine with my two rescue dogs and cat.
                   </p>
                 </div>
 
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Whether you're purchasing your first home, upgrading to accommodate an expanding family, building your real estate portfolio - or refinancing to obtain more favorable terms or remodeling funds, I'll ensure your best interests are at the heart of the loan solution I'll choose for you.
+                  Whether you're purchasing your first home, upgrading to
+                  accommodate an expanding family, building your real estate
+                  portfolio - or refinancing to obtain more favorable terms or
+                  remodeling funds, I'll ensure your best interests are at the
+                  heart of the loan solution I'll choose for you.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
@@ -337,7 +357,8 @@ export default function AboutPage() {
                       </span>
                     </div>
                     <p className="text-sm text-gray-600 mt-1">
-                      Ensuring your best interests are at the heart of every loan solution
+                      Ensuring your best interests are at the heart of every
+                      loan solution
                     </p>
                   </div>
                   <div className="bg-white rounded-xl p-4 border border-gray-200">
@@ -348,14 +369,16 @@ export default function AboutPage() {
                       </span>
                     </div>
                     <p className="text-sm text-gray-600 mt-1">
-                      A truly simple, transparent and award-winning process from application to closing
+                      A truly simple, transparent and award-winning process from
+                      application to closing
                     </p>
                   </div>
                 </div>
 
                 <div className="mt-6 p-4 bg-[#08263d] rounded-xl text-white">
                   <p className="italic text-white/90">
-                    "I understand how important my clients loans are - and I am not satisfied until you are delighted with the process."
+                    "I understand how important my clients loans are - and I am
+                    not satisfied until you are delighted with the process."
                   </p>
                   <div className="flex items-center gap-4 mt-3 pt-3 border-t border-white/20">
                     <div className="flex items-center gap-2">
@@ -386,7 +409,7 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* What Can I Afford? */}
         <section className="mb-16 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
@@ -444,7 +467,7 @@ export default function AboutPage() {
             to speak with me. I'm here to help!
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="mailto:Tristanpearrow@gmial.com">
+            <a href="mailto:tpearrow@genevafi.com">
               <button className="bg-white text-[#1470AF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
                 Get Started Today
               </button>
@@ -552,7 +575,7 @@ export default function AboutPage() {
               <Icons.Phone className="w-5 h-5" /> (904) 735-1895
             </a>
             <a
-              href="mailto:Tristanpearrow@gmial.com"
+              href="mailto:tpearrow@genevafi.com"
               className="inline-flex items-center gap-2 border-2 border-white text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/10 transition"
             >
               <Icons.Mail className="w-5 h-5" /> Email Tristan
@@ -562,9 +585,9 @@ export default function AboutPage() {
 
         <div className="mt-8 p-4 bg-gray-50 rounded-lg border border-gray-200">
           <p className="text-xs text-gray-500 text-center leading-relaxed">
-            Tristan Pearrow is a licensed mortgage professional. NMLS
-            #1878186. Loan approvals are subject to underwriting guidelines.
-            Equal Housing Lender.
+            Tristan Pearrow is a licensed mortgage professional. NMLS #1878186.
+            Loan approvals are subject to underwriting guidelines. Equal Housing
+            Lender.
           </p>
         </div>
       </div>

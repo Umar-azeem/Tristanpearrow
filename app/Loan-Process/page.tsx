@@ -35,7 +35,7 @@ export default function LoanProcessPage() {
             <div>
               <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6">
                 <BadgeCheck className="w-4 h-4" />
-                Central Valley{`'`}s Top Rated Mortgage Lender
+               
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-3 sm:mb-4">
                 Loan Process
@@ -80,13 +80,13 @@ export default function LoanProcessPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center">
             <div className="p-4 sm:p-6 bg-white rounded-2xl shadow-sm">
               <div className="text-[#1470AF] text-2xl sm:text-3xl font-bold">
-                30+
+                10+
               </div>
               <div className="text-xs sm:text-sm text-gray-500">
                 Years Experience
               </div>
             </div>
-            <div className="p-4 sm:p-6 bg-white rounded-2xl shadow-sm">
+            {/* <div className="p-4 sm:p-6 bg-white rounded-2xl shadow-sm">
               <div className="text-[#1470AF] text-2xl sm:text-3xl font-bold">
                 4,000+
               </div>
@@ -101,10 +101,10 @@ export default function LoanProcessPage() {
               <div className="text-xs sm:text-sm text-gray-500">
                 Days to Close
               </div>
-            </div>
+            </div> */}
             <div className="p-4 sm:p-6 bg-white rounded-2xl shadow-sm">
               <div className="text-[#1470AF] text-2xl sm:text-3xl font-bold">
-                680+
+                580+
               </div>
               <div className="text-xs sm:text-sm text-gray-500">
                 A+ Credit Score

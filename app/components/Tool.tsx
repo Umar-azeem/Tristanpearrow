@@ -683,6 +683,7 @@ const Tool = () => {
               value={6.5}
               format={(v) => v.toFixed(2) + "%"}
               delta="↑ 0.25% this month"
+              good
               icon={TrendingUp}
             />
             <StatCard

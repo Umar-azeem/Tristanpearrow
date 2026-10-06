@@ -268,10 +268,7 @@ function NavigationMenuDemo() {
                   (904) 735-1895{" "}
                 </button>
               </Link>
-              <Link
-                href="https://teamvb.shapeportal.com/ref/7"
-                className="w-full px-4"
-              >
+              <Link href="/Loan-Process" className="w-full px-4">
                 <button className="bg-white text-[#1470AF] px-6 w-full py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
                   Apply Online
                 </button>
@@ -351,7 +348,7 @@ function NavigationMenuDemo() {
             <h3>904-735-1895 </h3>
           </Link>
           <Link
-            href="https://teamvb.shapeportal.com/ref/7"
+            href="/Loan-Process"
             target="_blank"
             className="flex gap-2 justify-center "
           >

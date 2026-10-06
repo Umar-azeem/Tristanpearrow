@@ -60,10 +60,10 @@ export default function Footer() {
               unoptimized
             />
             <Link
-              href="mailto:Tristanpearrow@gmial.com"
+              href="mailto:tpearrow@genevafi.com"
               className="break-all  hover:text-gray-300 transition-colors"
             >
-              Tristanpearrow@gmial.com
+              tpearrow@genevafi.com
             </Link>
           </p>
           <p className="mb-4 flex flex-row justify-start items-start gap-2">

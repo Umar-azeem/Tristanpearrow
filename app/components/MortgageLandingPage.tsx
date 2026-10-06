@@ -24,7 +24,6 @@ const MortgageLandingPage = () => {
     youtube: "https://img.icons8.com/ios-filled/50/374151/youtube-play.png",
     google: "https://img.icons8.com/ios-filled/50/374151/google-logo.png",
     tiktok: "https://img.icons8.com/ios-filled/50/374151/tiktok.png",
-
   };
 
   return (
@@ -55,11 +54,23 @@ const MortgageLandingPage = () => {
               </h1>
             </div>
             <p className="text-sm sm:text-base text-gray-200 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              I'm a 4th generation Sunshine State native and dedicated mortgage
-              loan officer. I hail from St. Augustine, the Nation{`'`}s Oldest City,
+              A 4th generation Sunshine State native and dedicated mortgage loan
+              officer, I hail from St. Augustine — the Nation{`'`}s Oldest City —
               and studied at the University of Central Florida and the
-              University of North Florida where I earned my Bachelors Degree. I
-              currently live in St. Augustine with my two rescue dogs and cat.
+              University of North Florida, where I earned my Bachelor{`'`}s Degree.
+              I currently live in St. Augustine with my two rescue dogs and cat.
+              Licensed in Georgia, whether you{`'`}re purchasing
+              your first home, upgrading to accommodate an expanding family, or
+              refinancing to obtain more favorable terms or remodeling funds,
+              I{`'`}ll ensure your best interests are at the heart of the loan
+              solution I choose for you. My rock solid reputation is based upon
+              integrity-based lending practices and a program portfolio that
+              suits even the most challenging financing situations. From
+              application through closing and every step along the way, you{`'`}
+              ll be confident in my truly simple, transparent, and award-winning
+              process. I understand it{`'`}s both my privilege and responsibility to
+              earn your trust, and I{`'`}ll never be satisfied until you are
+              delighted with your experience.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-4">
@@ -83,7 +94,7 @@ const MortgageLandingPage = () => {
 
           <div className="flex-1 relative flex justify-center lg:justify-end items-end w-full">
             <div className="absolute hidden -top-2 sm:top-10 left-1/2 -translate-x-1/2 lg:left-auto lg:-translate-x-0 lg:-left-4 xl:-left-16 z-20 md:flex items-center gap-2">
-              <div className="flex flex-col items-center">
+              {/* <div className="flex flex-col items-center">
                 <img
                   src="https://cdn.prod.website-files.com/65d509901b89bb3fd2a62af7/65d509901b89bb3fd2a62b22_Customer%20Badges.svg"
                   alt="Customers"
@@ -92,8 +103,8 @@ const MortgageLandingPage = () => {
                 <p className="text-sm sm:text-lg text-gray-100 -mt-6 sm:-mt-8 text-center whitespace-nowrap">
                   Satisfied Customers
                 </p>
-              </div>
-              <h2 className="text-2xl sm:text-3xl font-bold">100K+</h2>
+              </div> */}
+              {/* <h2 className="text-2xl sm:text-3xl font-bold">100K+</h2> */}
             </div>
 
             <div className="  relative w-full max-w-[450px]">
@@ -109,7 +120,7 @@ const MortgageLandingPage = () => {
                 </h1>
               </div>
               <div className="absolute md:hidden   top-26 left-1/2 -translate-x-1/2 lg:left-auto lg:-translate-x-0 lg:-left-4 xl:-left-16 z-20 md:flex items-center gap-2">
-                <div className="flex flex-col items-center">
+                {/* <div className="flex flex-col items-center">
                   <img
                     src="https://cdn.prod.website-files.com/65d509901b89bb3fd2a62af7/65d509901b89bb3fd2a62b22_Customer%20Badges.svg"
                     alt="Customers"
@@ -121,7 +132,7 @@ const MortgageLandingPage = () => {
                     </p>
                   </div>
                   <h2 className="text-sm font-semibold">100K+</h2>
-                </div>
+                </div> */}
               </div>
               <img
                 src="/img/tr.png"
