@@ -1,14 +1,6 @@
 "use client";
 
-import {
-  Mail,
-  Phone,
-  ShieldCheck,
-  Award,
-  Calendar,
-  PhoneCall,
-  Handshake,
-} from "lucide-react";
+import { Handshake } from "lucide-react";
 import Link from "next/link";
 
 export default function Community() {
@@ -49,7 +41,7 @@ export default function Community() {
           </Link>
 
           {/* Core Stats */}
-          <div className="mt-16 sm:mt-24 flex flex-row items-center justify-center lg:justify-start gap-12 text-xl sm:text-2xl">
+          {/* <div className="mt-16 sm:mt-24 flex flex-row items-center justify-center lg:justify-start gap-12 text-xl sm:text-2xl">
             <div className="flex flex-col md:flex-row items-center gap-2">
               <h3 className="font-bold text-2xl text-[#111827] whitespace-nowrap">
                  Years
@@ -68,7 +60,7 @@ export default function Community() {
                 Individual Loans
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <>
