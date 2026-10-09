@@ -52,7 +52,7 @@ export default function Community() {
           <div className="mt-16 sm:mt-24 flex flex-row items-center justify-center lg:justify-start gap-12 text-xl sm:text-2xl">
             <div className="flex flex-col md:flex-row items-center gap-2">
               <h3 className="font-bold text-2xl text-[#111827] whitespace-nowrap">
-                30+ Years
+                 Years
               </h3>
               <p className="text-gray-600 leading-tight whitespace-nowrap text-sm font-light sm:text-base">
                 Of Serving Our{" "}
@@ -62,7 +62,7 @@ export default function Community() {
 
             <div className="flex flex-col md:flex-row items-center gap-2">
               <h3 className="font-bold text-2xl text-[#111827] whitespace-nowrap">
-                4,000+
+              
               </h3>
               <p className="text-gray-600 text-sm font-light leading-tight whitespace-nowrap sm:text-base">
                 Individual Loans

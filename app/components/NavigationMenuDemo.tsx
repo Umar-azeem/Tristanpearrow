@@ -8,7 +8,6 @@ import {
   Menu,
   Home,
   Info,
-  BookOpen,
   Phone,
   Home as HomeIcon,
   Shield,
