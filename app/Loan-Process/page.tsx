@@ -417,14 +417,14 @@ export default function LoanProcessPage() {
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mt-4 sm:mt-4">
               <Link
-                href="/apply"
+                href="https://wa.me/19047351895"
                 className="inline-flex items-center justify-center gap-2 bg-[#1470AF] text-white px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl font-semibold hover:bg-[#1470AF] transition-transform hover:-translate-y-1 shadow-lg text-sm sm:text-base"
               >
                 Apply Online
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
               <Link
-                href="/contact"
+                href="/contact-us"
                 className="inline-flex items-center justify-center gap-2 bg-white text-[#1470AF] px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl font-semibold border border-[#1470AF]/30 hover:bg-gray-50 transition-transform hover:-translate-y-1 text-sm sm:text-base"
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -452,14 +452,14 @@ export default function LoanProcessPage() {
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
               <Link
-                href="/apply"
+                href="https://wa.me/19047351895"
                 className="inline-flex items-center justify-center gap-2 bg-white text-[#1470AF] px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-bold hover:bg-gray-100 transition-transform hover:-translate-y-1 shadow-xl text-sm sm:text-base"
               >
                 Apply Now
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
               <Link
-                href="/contact"
+                href="/contact-us"
                 className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-bold hover:bg-white/30 transition-transform hover:-translate-y-1 border border-white/30 text-sm sm:text-base"
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
