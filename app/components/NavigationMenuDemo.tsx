@@ -195,7 +195,7 @@ function NavigationMenuDemo() {
             side="left"
             className="w-[300px] sm:w-[450px] bg-[#1470AF] text-white border-white/10 p-0 overflow-y-auto"
           >
-            <div className="flex h-28 items-center border-b border-white/10 px-1">
+            <div className="flex h-28 items-center border-b border-gray-200 bg-white px-1">
               <Link href="/" onClick={() => setIsOpen(false)}>
                 <Image
                   src="/img/logo.png"

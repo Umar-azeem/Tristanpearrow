@@ -9,7 +9,7 @@ import Link from "next/link";
 const cards = [
   {
     id: 0,
-    badge: "20+ Years",
+    badge: "10+ Years",
     title: "Guide from Experience",
     description:
       "With over 20 years in finance, I provide a level of expertise that financially benefits clients and is deeply respected by industry professionals nationwide.",
@@ -18,7 +18,7 @@ const cards = [
     backBg: "bg-[#1470AF]",
     backTitle: "Why Experience Matters",
     features: [
-      "20+ years in mortgage finance",
+      "10+ years in mortgage finance",
       "Trusted by industry professionals",
       "Proven track record of client savings",
     ],

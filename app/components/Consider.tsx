@@ -79,11 +79,11 @@ function Consider() {
 
               <div className="mt-8 pt-6 border-t border-white/10 grid gap-3 sm:grid-cols-2 text-sm">
                 <a
-                  href="mailto:Billy@billywatkinsmortgage.com"
+                  href="mailto:Tristan@Tristanwatkinsmortgage.com"
                   className="flex items-center gap-3 hover:text-green-200 transition break-all"
                 >
                   <Mail className="w-4 h-4 text-green-300 shrink-0" />
-                  <span>Billy@billywatkinsmortgage.com</span>
+                  <span>Tristan@Tristanwatkinsmortgage.com</span>
                 </a>
                 <a
                   href="tel:573-881-5436"

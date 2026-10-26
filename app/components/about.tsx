@@ -120,7 +120,7 @@ export default function AboutPage() {
     },
     {
       q: "What credit scores work for first-time buyers?",
-      a: "FHA loans accept scores as low as 580 with 3.5% down. Conventional loans typically require 620+.",
+      a: "FHA loans accept scores as low as 580 with 3.5% down. Conventional loans typically require 610+.",
     },
     {
       q: "What documents do self-employed borrowers need?",
