@@ -9,7 +9,7 @@ const Icon = ({ src, size = 20, className = "" }: { src: string; size?: number; 
 const DEFAULT_DATA = {
   title: "Your Mortgage\nLoan Officer",
   subtitle: "Hi, I'm Tristan Pearrow",
-  description: "A 4th generation Sunshine State native and dedicated mortgage loan officer, I hail from St. Augustine — the Nation's Oldest City — and studied at the University of Central Florida and the University of North Florida, where I earned my Bachelor's Degree. I currently live in St. Augustine with my two rescue dogs and cat. Licensed in Georgia, whether you're purchasing your first home, upgrading to accommodate an expanding family, or refinancing to obtain more favorable terms or remodeling funds, I'll ensure your best interests are at the heart of the loan solution I choose for you. My rock solid reputation is based upon integrity-based lending practices and a program portfolio that suits even the most challenging financing situations. From application through closing and every step along the way, you'll be confident in my truly simple, transparent, and award-winning process. I understand it's both my privilege and responsibility to earn your trust, and I'll never be satisfied until you are delighted with your experience.",
+  description: "Whether you're buying your first home, refinancing, or investing in real estate, I'm here to make the mortgage process simple, transparent, and stress-free.",
   image: "/img/tr.png",
 };
 

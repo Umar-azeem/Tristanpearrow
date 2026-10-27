@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import * as Icons from "lucide-react";
+import { useState, useEffect } from "react";
 import {
   ArrowRight,
   Award,
@@ -14,7 +15,32 @@ import {
   Users,
 } from "lucide-react";
 
+// Fallback data in case API fails
+const DEFAULT_DATA = {
+  title: "Hi, I'm Tristan Pearrow",
+  heading: "Tristan Pearrow",
+  paragraph: "I'm Tristan Pearrow, a 4th generation Sunshine State native and dedicated mortgage loan officer. I hail from St. Augustine, the Nation's Oldest City, and studied at the University of Central Florida and the University of North Florida where I earned my Bachelors Degree. I currently live in St. Augustine with my two rescue dogs and cat.\n\nWhether you're purchasing your first home, upgrading to accommodate an expanding family, building your real estate portfolio - or refinancing to obtain more favorable terms or remodeling funds, I'll ensure your best interests are at the heart of the loan solution I'll choose for you. From application through closing and every step along the way, you'll be confident in my truly simple, transparent and award-winning process.\n\nI understand how important my clients loans are - and I am not satisfied until you are delighted with the process.",
+  image: "/img/tr.png",
+};
+
 export default function AboutPage() {
+  // ✅ 1. Fetch Dynamic Data
+  const [data, setData] = useState(DEFAULT_DATA);
+
+  useEffect(() => {
+    fetch("/api/hero")
+      .then((res) => res.json())
+      .then((d) => {
+        setData({
+          title: d.subtitle || DEFAULT_DATA.title, // From Admin "1. Title"
+          heading: d.title?.replace(/\n/g, " ") || DEFAULT_DATA.heading, // From Admin "2. Heading"
+          paragraph: d.description || DEFAULT_DATA.paragraph, // From Admin "3. Paragraph"
+          image: d.image || DEFAULT_DATA.image, // From Admin Image Upload
+        });
+      })
+      .catch(() => setData(DEFAULT_DATA));
+  }, []);
+
   const values = [
     {
       icon: Icons.Shield,
@@ -37,120 +63,43 @@ export default function AboutPage() {
   ];
 
   const processSteps = [
-    {
-      step: 1,
-      title: "Discovery Call",
-      description:
-        "A no-obligation conversation to understand your goals and financial picture.",
-    },
-    {
-      step: 2,
-      title: "Document Checklist",
-      description:
-        "Receive a clear, simple list of required documents for your specific situation.",
-    },
-    {
-      step: 3,
-      title: "Reliable Pre-Approval",
-      description:
-        "Get your financing fully vetted for a strong, competitive offer.",
-    },
-    {
-      step: 4,
-      title: "Home Shopping Support",
-      description:
-        "Receive guidance and updated payment scenarios as you tour homes.",
-    },
-    {
-      step: 5,
-      title: "Seamless Underwriting",
-      description:
-        "Proactive management of the underwriting process to ensure a smooth journey.",
-    },
-    {
-      step: 6,
-      title: "Closing Day",
-      description:
-        "We ensure all figures are accurate for a stress-free closing.",
-    },
-    {
-      step: 7,
-      title: "Post-Closing Partnership",
-      description: "Benefit from ongoing rate monitoring and support for life.",
-    },
+    { step: 1, title: "Discovery Call", description: "A no-obligation conversation to understand your goals and financial picture." },
+    { step: 2, title: "Document Checklist", description: "Receive a clear, simple list of required documents for your specific situation." },
+    { step: 3, title: "Reliable Pre-Approval", description: "Get your financing fully vetted for a strong, competitive offer." },
+    { step: 4, title: "Home Shopping Support", description: "Receive guidance and updated payment scenarios as you tour homes." },
+    { step: 5, title: "Seamless Underwriting", description: "Proactive management of the underwriting process to ensure a smooth journey." },
+    { step: 6, title: "Closing Day", description: "We ensure all figures are accurate for a stress-free closing." },
+    { step: 7, title: "Post-Closing Partnership", description: "Benefit from ongoing rate monitoring and support for life." },
   ];
 
   const loanPrograms = [
-    {
-      title: "Conventional Loans",
-      description:
-        "Traditional mortgage financing with competitive rates, flexible terms, and down payments as low as 3%.",
-    },
-    {
-      title: "FHA Loans",
-      description:
-        "Government-backed home loans with flexible credit requirements and down payments as low as 3.5%.",
-    },
-    {
-      title: "VA Home Loans",
-      description:
-        "Exclusive zero-down mortgage benefits for veterans and service members.",
-    },
-    {
-      title: "USDA Loans",
-      description:
-        "Loans designed to help low- and moderate-income individuals and families buy homes in rural areas.",
-    },
-    {
-      title: "New Construction Financing",
-      description:
-        "Specialized financing for building your dream home from the ground up.",
-    },
-    {
-      title: "Non-Traditional Solutions",
-      description:
-        "Tailored financing options for self-employed borrowers who may not qualify through traditional methods.",
-    },
+    { title: "Conventional Loans", description: "Traditional mortgage financing with competitive rates, flexible terms, and down payments as low as 3%." },
+    { title: "FHA Loans", description: "Government-backed home loans with flexible credit requirements and down payments as low as 3.5%." },
+    { title: "VA Home Loans", description: "Exclusive zero-down mortgage benefits for veterans and service members." },
+    { title: "USDA Loans", description: "Loans designed to help low- and moderate-income individuals and families buy homes in rural areas." },
+    { title: "New Construction Financing", description: "Specialized financing for building your dream home from the ground up." },
+    { title: "Non-Traditional Solutions", description: "Tailored financing options for self-employed borrowers who may not qualify through traditional methods." },
   ];
 
   const faqs = [
-    {
-      q: "How fast can I get pre-approved?",
-      a: "Most pre-approvals are completed within 24-48 hours once all documentation is received.",
-    },
-    {
-      q: "What credit scores work for first-time buyers?",
-      a: "FHA loans accept scores as low as 580 with 3.5% down. Conventional loans typically require 610+.",
-    },
-    {
-      q: "What documents do self-employed borrowers need?",
-      a: "Typically 12-24 months of personal or business bank statements showing consistent income, along with tax returns.",
-    },
-    {
-      q: "What are USDA loan requirements?",
-      a: "USDA loans are for rural properties and require the home to be in an eligible area. They offer 0% down payment options.",
-    },
-    {
-      q: "How does new construction financing work?",
-      a: "Construction loans provide funds to build your home, then convert to permanent financing once construction is complete.",
-    },
-    {
-      q: "What are typical VA loan timelines?",
-      a: "VA loans typically close in 30-45 days. We help veterans navigate the process from COE to appraisal.",
-    },
+    { q: "How fast can I get pre-approved?", a: "Most pre-approvals are completed within 24-48 hours once all documentation is received." },
+    { q: "What credit scores work for first-time buyers?", a: "FHA loans accept scores as low as 580 with 3.5% down. Conventional loans typically require 610+." },
+    { q: "What documents do self-employed borrowers need?", a: "Typically 12-24 months of personal or business bank statements showing consistent income, along with tax returns." },
+    { q: "What are USDA loan requirements?", a: "USDA loans are for rural properties and require the home to be in an eligible area. They offer 0% down payment options." },
+    { q: "How does new construction financing work?", a: "Construction loans provide funds to build your home, then convert to permanent financing once construction is complete." },
+    { q: "What are typical VA loan timelines?", a: "VA loans typically close in 30-45 days. We help veterans navigate the process from COE to appraisal." },
   ];
 
   const states = ["FL"];
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section - Tristan Pearrow */}
+      {/* Hero Section - Now Dynamic! */}
       <div className="relative bg-gradient-to-r from-[#0329b3] to-[#1470AF] text-white rounded-2xl">
         <div
           className="absolute inset-0 z-0 opacity-20"
           style={{
-            backgroundImage:
-              'url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80")',
+            backgroundImage: 'url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80")',
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -159,19 +108,15 @@ export default function AboutPage() {
         <div className="relative z-10 container mx-auto max-w-7xl px-4 py-16 md:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-[#ffdfd9] font-bold tracking-[4px] text-sm mb-4">
-                Mortgage Loan Officer
+              <p className="text-[#ffdfd9] font-bold tracking-[4px] text-sm mb-4 uppercase">
+                {data.title} {/* ✅ Dynamic Title from Admin */}
               </p>
-              <p className="text-[#ffdfd9]  text-sm mb-2">NMLS #1878186</p>
+              <p className="text-[#ffdfd9] text-sm mb-2">NMLS #1878186</p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
-                Tristan Pearrow
+                {data.heading} {/* ✅ Dynamic Heading from Admin */}
               </h1>
-              <p className="text-[#ffdfd9]  text-lg max-w-xl mb-2">
-                8520 Govt Drive
-              </p>
-              <p className="text-gray-200 text-lg max-w-xl mb-6">
-                New Port Richey, FL 34654
-              </p>
+              <p className="text-[#ffdfd9] text-lg max-w-xl mb-2">8520 Govt Drive</p>
+              <p className="text-gray-200 text-lg max-w-xl mb-6">New Port Richey, FL 34654</p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact-us">
                   <button className="bg-white text-[#1470AF] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
@@ -189,8 +134,9 @@ export default function AboutPage() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
                 <div className="absolute inset-0 rounded-full bg-[#011829]/95 animate-pulse" />
+                {/* ✅ Dynamic Image from Admin */}
                 <Image
-                  src="/img/tr.png"
+                  src={data.image} 
                   alt="Tristan Pearrow - Mortgage Loan Officer"
                   fill
                   className="rounded-full object-cover border-4 border-white/20 shadow-2xl"
@@ -206,62 +152,32 @@ export default function AboutPage() {
       </div>
 
       <div className="container mx-auto max-w-7xl px-4 py-12 md:py-16">
-        {/* About Tristan Pearrow */}
+        {/* About Tristan Pearrow - Now Dynamic! */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
             About Tristan Pearrow
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
-              <p className="text-gray-700 leading-relaxed mb-4">
-                I{`'`}m Tristan Pearrow, a 4th generation Sunshine State native
-                and dedicated mortgage loan officer. I hail from St. Augustine,
-                the Nation's Oldest City, and studied at the University of
-                Central Florida and the University of North Florida where I
-                earned my Bachelors Degree. I currently live in St. Augustine
-                with my two rescue dogs and cat.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Whether you{`'`}re purchasing your first home, upgrading to
-                accommodate an expanding family, building your real estate
-                portfolio - or refinancing to obtain more favorable terms or
-                remodeling funds, I'll ensure your best interests are at the
-                heart of the loan solution I'll choose for you. From application
-                through closing and every step along the way, you'll be
-                confident in my truly simple, transparent and award-winning
-                process.
-              </p>
-              <p className="text-gray-700 leading-relaxed font-medium">
-                I understand how important my clients loans are - and I am not
-                satisfied until you are delighted with the process.
-              </p>
+              {/* ✅ Dynamic Paragraph from Admin */}
+              <div className="text-gray-700 leading-relaxed mb-4 whitespace-pre-line">
+                {data.paragraph}
+              </div>
+              
               <div className="mt-6 flex items-center gap-4">
-                <a
-                  href="tel:+19047351895"
-                  className="text-[#1470AF] font-medium flex items-center gap-2"
-                >
-                  <Icons.Phone className="w-4 h-4" />
-                  (904) 735-1895
+                <a href="tel:+19047351895" className="text-[#1470AF] font-medium flex items-center gap-2">
+                  <Icons.Phone className="w-4 h-4" /> (904) 735-1895
                 </a>
-                <a
-                  href="mailto:tpearrow@genevafi.com"
-                  className="text-[#1470AF] font-medium flex items-center gap-2"
-                >
-                  <Icons.Mail className="w-4 h-4" />
-                  tpearrow@genevafi.com
+                <a href="mailto:tpearrow@genevafi.com" className="text-[#1470AF] font-medium flex items-center gap-2">
+                  <Icons.Mail className="w-4 h-4" /> tpearrow@genevafi.com
                 </a>
               </div>
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-4">
-                A TEAM YOU CAN TRUST
-              </h3>
+              <h3 className="font-semibold text-gray-900 mb-4">A TEAM YOU CAN TRUST</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                I would love to help you get into a new home. Please utilize the
-                links below and contact my office if you have any questions. I
-                have helped individuals and families throughout Florida, and
-                would love to help you, too…
+                I would love to help you get into a new home. Please utilize the links below and contact my office if you have any questions. I have helped individuals and families throughout Florida, and would love to help you, too…
               </p>
             </div>
           </div>
@@ -276,140 +192,17 @@ export default function AboutPage() {
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
-                <div
-                  key={index}
-                  className="text-center p-6 rounded-xl hover:bg-gray-50 transition"
-                >
+                <div key={index} className="text-center p-6 rounded-xl hover:bg-gray-50 transition">
                   <div className="w-14 h-14 bg-[#1470AF]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Icon className="w-7 h-7 text-[#1470AF]" />
                   </div>
-                  <h3 className="font-semibold text-gray-900 mb-2">
-                    {value.title}
-                  </h3>
+                  <h3 className="font-semibold text-gray-900 mb-2">{value.title}</h3>
                   <p className="text-gray-600 text-sm">{value.description}</p>
                 </div>
               );
             })}
           </div>
         </section>
-
-        {/* <section className="mb-16 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#08263d] mb-8 text-center">
-            ME, & My Team
-          </h2>
-
-          <div className="relative w-full rounded-xl overflow-hidden mb-2">
-            <div className="absolute inset-0 z-20 flex items-center justify-center">
-              <div className="text-center text-white">
-                <h3 className="text-2xl md:text-4xl font-bold drop-shadow-lg">
-                  A Team You Can Trust
-                </h3>
-                <p className="text-white/90 mt-2 drop-shadow-lg">
-                  Helping families achieve their dream of homeownership
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-1 relative h-64 md:h-1/3  min-h-1/3">
-              <Image
-                src="/img/team.png"
-                alt="Team Banner 1"
-                fill
-                className="object-cover rounded-xl"
-                sizes="(max-width: 1024px) 100vw, 33vw"
-                priority // Add this if it's above the fold
-                quality={90}
-              />
-            </div>
-            <div className="lg:col-span-2">
-              <div className="prose max-w-none">
-                <div className="bg-[#eef5f6] rounded-xl p-6 mb-4">
-                  <h4 className="text-lg font-bold text-[#08263d] mb-3 flex items-center gap-2">
-                    <Heart size={20} className="text-[#67d8dc]" />
-                    My Journey in Mortgage
-                  </h4>
-                  <p className="text-gray-700 leading-relaxed">
-                    I'm a 4th generation Sunshine State native and dedicated
-                    mortgage loan officer. I hail from St. Augustine, the
-                    Nation's Oldest City, and studied at the University of
-                    Central Florida and the University of North Florida where I
-                    earned my Bachelors Degree. I currently live in St.
-                    Augustine with my two rescue dogs and cat.
-                  </p>
-                </div>
-
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  Whether you're purchasing your first home, upgrading to
-                  accommodate an expanding family, building your real estate
-                  portfolio - or refinancing to obtain more favorable terms or
-                  remodeling funds, I'll ensure your best interests are at the
-                  heart of the loan solution I'll choose for you.
-                </p>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                  <div className="bg-white rounded-xl p-4 border border-gray-200">
-                    <div className="flex items-center gap-2 text-[#67d8dc]">
-                      <CheckCircle size={18} />
-                      <span className="font-semibold text-[#08263d]">
-                        My Passion
-                      </span>
-                    </div>
-                    <p className="text-sm text-gray-600 mt-1">
-                      Ensuring your best interests are at the heart of every
-                      loan solution
-                    </p>
-                  </div>
-                  <div className="bg-white rounded-xl p-4 border border-gray-200">
-                    <div className="flex items-center gap-2 text-[#67d8dc]">
-                      <Users size={18} />
-                      <span className="font-semibold text-[#08263d]">
-                        My Process
-                      </span>
-                    </div>
-                    <p className="text-sm text-gray-600 mt-1">
-                      A truly simple, transparent and award-winning process from
-                      application to closing
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mt-6 p-4 bg-[#08263d] rounded-xl text-white">
-                  <p className="italic text-white/90">
-                    "I understand how important my clients loans are - and I am
-                    not satisfied until you are delighted with the process."
-                  </p>
-                  <div className="flex items-center gap-4 mt-3 pt-3 border-t border-white/20">
-                    <div className="flex items-center gap-2">
-                      <Star size={16} className="text-[#67d8dc]" />
-                      <span className="text-sm">4th Generation Floridian</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Award size={16} className="text-[#67d8dc]" />
-                      <span className="text-sm">Award-Winning Process</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-6 flex flex-wrap gap-4">
-                  <Link
-                    href="/contact-us"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#67d8dc] text-[#08263d] font-bold rounded-full hover:bg-[#67d8dc]/90 transition-all hover:scale-105"
-                  >
-                    Contact Tristan <ArrowRight size={18} />
-                  </Link>
-                  <Link
-                    href="/#calculator"
-                    className="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#08263d] text-[#08263d] font-bold rounded-full hover:bg-[#08263d] hover:text-white transition-all"
-                  >
-                    Try Our Calculator <ArrowRight size={18} />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
 
         {/* What Can I Afford? */}
         <section className="mb-16 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
@@ -418,10 +211,7 @@ export default function AboutPage() {
               What can I afford?
             </h2>
             <p className="text-gray-600 mb-6">
-              With this mortgage calculator, you can easily determine your
-              estimated monthly payment, as well as how much interest you might
-              pay and your projected principal balances. You can also input
-              prepayment amounts to see their impact on your mortgage.
+              With this mortgage calculator, you can easily determine your estimated monthly payment, as well as how much interest you might pay and your projected principal balances. You can also input prepayment amounts to see their impact on your mortgage.
             </p>
             <Link href="/calculator">
               <button className="bg-[#1470AF] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#f36f55] transition">
@@ -437,18 +227,12 @@ export default function AboutPage() {
             Loan Programs & Expertise
           </h2>
           <p className="text-gray-600 mb-6">
-            Tristan offers a full range of loan options to meet your unique
-            needs:
+            Tristan offers a full range of loan options to meet your unique needs:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {loanPrograms.map((program, index) => (
-              <div
-                key={index}
-                className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition"
-              >
-                <h4 className="font-semibold text-gray-900 text-sm mb-1">
-                  {program.title}
-                </h4>
+              <div key={index} className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <h4 className="font-semibold text-gray-900 text-sm mb-1">{program.title}</h4>
                 <p className="text-gray-600 text-xs">{program.description}</p>
               </div>
             ))}
@@ -461,10 +245,7 @@ export default function AboutPage() {
             Let{`'`}s get you into your dream home
           </h2>
           <p className="text-green-200 max-w-2xl mx-auto mb-8">
-            It{`'`}s simple to get started on your mortgage journey – whether
-            you{`'`}re just looking to get pre-qualified or are ready to submit
-            an application. Just click the button below or submit a contact form
-            to speak with me. I'm here to help!
+            It{`'`}s simple to get started on your mortgage journey – whether you{`'`}re just looking to get pre-qualified or are ready to submit an application. Just click the button below or submit a contact form to speak with me. I'm here to help!
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="mailto:tpearrow@genevafi.com">
@@ -487,32 +268,22 @@ export default function AboutPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {processSteps.slice(0, 4).map((step) => (
-              <div
-                key={step.step}
-                className="text-center p-4 rounded-xl hover:bg-gray-50 transition"
-              >
+              <div key={step.step} className="text-center p-4 rounded-xl hover:bg-gray-50 transition">
                 <div className="w-12 h-12 bg-[#1470AF] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
                   {step.step}
                 </div>
-                <h4 className="font-semibold text-gray-900 text-sm mb-1">
-                  {step.title}
-                </h4>
+                <h4 className="font-semibold text-gray-900 text-sm mb-1">{step.title}</h4>
                 <p className="text-gray-600 text-xs">{step.description}</p>
               </div>
             ))}
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
             {processSteps.slice(4).map((step) => (
-              <div
-                key={step.step}
-                className="text-center p-4 rounded-xl hover:bg-gray-50 transition"
-              >
+              <div key={step.step} className="text-center p-4 rounded-xl hover:bg-gray-50 transition">
                 <div className="w-12 h-12 bg-[#1470AF] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
                   {step.step}
                 </div>
-                <h4 className="font-semibold text-gray-900 text-sm mb-1">
-                  {step.title}
-                </h4>
+                <h4 className="font-semibold text-gray-900 text-sm mb-1">{step.title}</h4>
                 <p className="text-gray-600 text-xs">{step.description}</p>
               </div>
             ))}
@@ -521,20 +292,13 @@ export default function AboutPage() {
 
         {/* Service Areas */}
         <section className="mb-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
-            Service Areas
-          </h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">Service Areas</h2>
           <p className="text-gray-300 text-center mb-6">
-            Tristan is proud to offer expert mortgage guidance in the following
-            states. Please note that specific loan program availability can vary
-            by state.
+            Tristan is proud to offer expert mortgage guidance in the following states. Please note that specific loan program availability can vary by state.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {states.map((state) => (
-              <span
-                key={state}
-                className="bg-white/10 px-4 py-2 rounded-lg text-sm font-medium"
-              >
+              <span key={state} className="bg-white/10 px-4 py-2 rounded-lg text-sm font-medium">
                 {state}
               </span>
             ))}
@@ -548,13 +312,8 @@ export default function AboutPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-white p-4 rounded-xl shadow-sm border border-gray-100"
-              >
-                <h4 className="font-semibold text-gray-900 text-sm mb-2">
-                  {faq.q}
-                </h4>
+              <div key={index} className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                <h4 className="font-semibold text-gray-900 text-sm mb-2">{faq.q}</h4>
                 <p className="text-gray-600 text-sm">{faq.a}</p>
               </div>
             ))}
@@ -568,16 +327,10 @@ export default function AboutPage() {
             Contact Tristan today for a no-obligation consultation.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="tel:+19047351895"
-              className="inline-flex items-center gap-2 bg-white text-[#1470AF] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
-            >
+            <a href="tel:+19047351895" className="inline-flex items-center gap-2 bg-white text-[#1470AF] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition">
               <Icons.Phone className="w-5 h-5" /> (904) 735-1895
             </a>
-            <a
-              href="mailto:tpearrow@genevafi.com"
-              className="inline-flex items-center gap-2 border-2 border-white text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/10 transition"
-            >
+            <a href="mailto:tpearrow@genevafi.com" className="inline-flex items-center gap-2 border-2 border-white text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/10 transition">
               <Icons.Mail className="w-5 h-5" /> Email Tristan
             </a>
           </div>
@@ -585,9 +338,7 @@ export default function AboutPage() {
 
         <div className="mt-8 p-4 bg-gray-50 rounded-lg border border-gray-200">
           <p className="text-xs text-gray-500 text-center leading-relaxed">
-            Tristan Pearrow is a licensed mortgage professional. NMLS #1878186.
-            Loan approvals are subject to underwriting guidelines. Equal Housing
-            Lender.
+            Tristan Pearrow is a licensed mortgage professional. NMLS #1878186. Loan approvals are subject to underwriting guidelines. Equal Housing Lender.
           </p>
         </div>
       </div>

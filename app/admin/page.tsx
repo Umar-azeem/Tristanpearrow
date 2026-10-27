@@ -200,20 +200,29 @@ export default function AdminPanel() {
           </div>
 
           <div className="group">
-            <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2 group-focus-within:text-blue-600 transition-colors">
-              <ImageIcon className="w-4 h-4" /> Profile Image
-            </label>
-            <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
-              <input type="file" accept="image/*" onChange={(e) => { setImage(e.target.files?.[0] || null); setRemoveImage(false); }} className="w-full border border-gray-300 p-2 rounded-lg text-gray-700 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 transition-all cursor-pointer" />
-              {(preview || image) && (
-                <button type="button" onClick={() => { setImage(null); setRemoveImage(true); setPreview(""); }} className="bg-red-50 text-red-600 px-4 py-2 rounded-lg font-bold hover:bg-red-100 flex items-center justify-center gap-2 transition-all border border-red-200">
-                  <Trash2 className="w-4 h-4" /> Remove
-                </button>
-              )}
-            </div>
-            {removeImage && <p className="text-xs text-red-500 mt-2 animate-pulse">Image will be reset to default on save.</p>}
-          </div>
-
+  <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2 group-focus-within:text-blue-600 transition-colors">
+    <ImageIcon className="w-4 h-4" /> Profile Image (PNG, JPG, WEBP)
+  </label>
+  <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
+    <input 
+      type="file" 
+      /* ✅ Restrict to only these 3 formats */
+      accept="image/png, image/jpeg, image/jpg, image/webp" 
+      onChange={(e) => { setImage(e.target.files?.[0] || null); setRemoveImage(false); }} 
+      className="w-full border border-gray-300 p-2 rounded-lg text-gray-700 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 transition-all cursor-pointer" 
+    />
+    {(preview || image) && (
+      <button 
+        type="button" 
+        onClick={() => { setImage(null); setRemoveImage(true); setPreview(""); }} 
+        className="bg-red-50 text-red-600 px-4 py-2 rounded-lg font-bold hover:bg-red-100 flex items-center justify-center gap-2 transition-all border border-red-200"
+      >
+        <Trash2 className="w-4 h-4" /> Remove
+      </button>
+    )}
+  </div>
+  {removeImage && <p className="text-xs text-red-500 mt-2 animate-pulse">Image will be reset to default on save.</p>}
+</div>
           {preview && !removeImage && (
             <div className="border border-dashed border-gray-300 rounded-xl p-4 bg-gray-50 flex justify-center transition-all">
               <img src={preview} alt="Preview" className="h-32 sm:h-40 object-contain rounded-lg shadow-sm" />
