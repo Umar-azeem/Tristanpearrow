@@ -22,6 +22,7 @@ import {
   SquareArrowOutUpRight,
   UserSearch,
   Loader,
+  Settings, // ✅ Added
 } from "lucide-react";
 
 import {
@@ -109,13 +110,6 @@ const navLinks = [
   { href: "/", label: "Home", icon: Home },
   { href: "/about", label: "About", icon: Info },
   { href: "/Loan-Process", label: "Loan Process", icon: Loader },
-
-  // {
-  //   href: "/Find-a-Loan-Officer",
-  //   label: "Find a Loan Officer",
-  //   icon: UserSearch,
-  // },
-  // { href: "/Our-Branches", label: "Our Branches", icon: BookOpen },
   { href: "/contact-us", label: "Contact", icon: Phone },
 ];
 
@@ -155,11 +149,7 @@ function NavigationMenuDemo() {
             </Button>
           </SheetTrigger>
           <div className="flex flex-row gap-2 mx-2">
-            <Link
-              href="/contact-us"
-              // target="_blank"
-            >
-              {" "}
+            <Link href="/contact-us">
               <Button
                 variant="default"
                 size="icon"
@@ -230,7 +220,9 @@ function NavigationMenuDemo() {
                     Loan Programs
                   </div>
                   <svg
-                    className={`h-4 w-4 transition-transform duration-200 ${mobileLoanOpen ? "rotate-180" : ""}`}
+                    className={`h-4 w-4 transition-transform duration-200 ${
+                      mobileLoanOpen ? "rotate-180" : ""
+                    }`}
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -257,6 +249,16 @@ function NavigationMenuDemo() {
                   </div>
                 )}
               </div>
+
+              {/* ✅ Admin Link (Mobile) */}
+              <Link
+                href="/admin"
+                onClick={() => setIsOpen(false)}
+                className="flex items-center gap-3 rounded-lg px-4 py-3 text-sm font-medium text-white/80 transition-all hover:bg-white/10 hover:text-white border-t border-white/20 mt-2 pt-3"
+              >
+                <Settings className="h-5 w-5" />
+                Admin Panel
+              </Link>
             </nav>
             <div className="lg:hidden flex flex-col w-full items-center gap-3 text-white ">
               <Link
@@ -329,9 +331,6 @@ function NavigationMenuDemo() {
                   <div className="border-t border-border p-4"></div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
-              {/* <NavigationMenuItem className="text-white text-lg font-semibold rounded-xl transform duration-300 transition-all hover:bg-white/10 hover:-translate-y-1 px-6 py-2">
-                <Link href="/Find-a-Loan-Officer">Find a Loan Officer</Link>
-              </NavigationMenuItem> */}
               <NavigationMenuItem className="text-white text-lg font-semibold rounded-xl transform duration-300 transition-all hover:bg-white/10 hover:-translate-y-1 px-6 py-2">
                 <Link href="/Loan-Process">Loan Process</Link>
               </NavigationMenuItem>
@@ -342,6 +341,16 @@ function NavigationMenuDemo() {
           </NavigationMenu>
         </div>
         <div className="hidden lg:flex items-center gap-3 text-white py-4">
+          {/* ✅ Admin Link (Desktop) */}
+          <Link
+            href="/admin"
+            className="flex items-center gap-2 px-3 py-2 rounded-lg text-white/90 hover:text-white hover:bg-white/10 transition-all"
+            title="Admin Panel"
+          >
+            <Settings className="h-5 w-5" />
+            <span className="text-sm font-semibold">Admin</span>
+          </Link>
+
           <Link href="tel:+19047351895" className="flex gap-2 justify-center ">
             <PhoneCall />
             <h3>904-735-1895 </h3>

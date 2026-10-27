@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
@@ -11,10 +11,18 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'cdn.example.com',
       },
-     
+      // ✅ Added Cloudinary for your uploaded images
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
     ],
   },
 };
 
 export default nextConfig;
 // VideoSection
+
+
+// umara4436_db_user
+// kZktYihZRp21Pi5w
