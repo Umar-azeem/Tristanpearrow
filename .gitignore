@@ -44,8 +44,3 @@ next-env.d.ts
 .env
 .env.local
 
-# MONGODB_URI="mongodb+srv://umara4436_db_user:kZktYihZRp21Pi5w@cluster0.7oaumyd.mongodb.net/?compressors=zlib"
-# CLOUDINARY_CLOUD_NAME="ddrib9bsp"
-# CLOUDINARY_API_KEY="653541379316692"
-# CLOUDINARY_API_SECRET="g2uM-l4wYE1gmAmdhNFHBf4eDL8"
-# ADMIN_PASSWORD="tristan123"
