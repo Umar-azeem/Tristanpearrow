@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 import mongoose from "mongoose";
 import { v2 as cloudinary } from "cloudinary";
-import Hero from "@/models/hero";
+import Hero from "@/models/hero"; // Ensure your file is models/Hero.ts
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -66,12 +66,14 @@ export async function POST(req: Request) {
       imageUrl = uploadResult.secure_url;
     }
 
+    // ✅ FIX: Allow empty strings to be saved. 
+    // If the field is null (not sent), keep existing. If it's "" (cleared), save "".
     const updatedData = await Hero.findOneAndUpdate(
       {},
       {
-        subtitle: subtitle || existingData.subtitle,
-        title: title || existingData.title,
-        description: description || existingData.description,
+        subtitle: subtitle !== null ? subtitle : existingData.subtitle,
+        title: title !== null ? title : existingData.title,
+        description: description !== null ? description : existingData.description,
         image: imageUrl,
       },
       { new: true, upsert: true },
@@ -79,6 +81,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ success: true, data: updatedData });
   } catch (error) {
+    console.error("Update error:", error);
     return NextResponse.json(
       { success: false, error: "Update failed" },
       { status: 500 },

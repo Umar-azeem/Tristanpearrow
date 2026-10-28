@@ -1,10 +1,8 @@
+// MortgageLandingPage.tsx
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-
-const Icon = ({ src, size = 20, className = "" }: { src: string; size?: number; className?: string }) => (
-  <img src={src} width={size} height={size} className={className} alt="" />
-);
+import { Facebook, Instagram, Youtube, Music2 } from "lucide-react";
 
 const DEFAULT_DATA = {
   title: "Your Mortgage\nLoan Officer",
@@ -16,18 +14,11 @@ const DEFAULT_DATA = {
 const MortgageLandingPage = () => {
   const [data, setData] = useState(DEFAULT_DATA);
 
-  const icons = {
-    phone: "https://img.icons8.com/ios/50/ffffff/phone.png",
-    facebook: "https://img.icons8.com/ios-filled/50/374151/facebook-new.png",
-    instagram: "https://img.icons8.com/ios/50/374151/instagram-new.png",
-    youtube: "https://img.icons8.com/ios-filled/50/374151/youtube-play.png",
-    tiktok: "https://img.icons8.com/ios-filled/50/374151/tiktok.png",
-  };
-
   useEffect(() => {
     fetch("/api/hero")
       .then((res) => res.json())
       .then((d) => {
+        // ✅ If the API data is empty/missing, fall back to DEFAULT_DATA
         setData({
           title: d?.title?.trim() ? d.title : DEFAULT_DATA.title,
           subtitle: d?.subtitle?.trim() ? d.subtitle : DEFAULT_DATA.subtitle,
@@ -53,7 +44,7 @@ const MortgageLandingPage = () => {
             </div>
             
             {/* Dynamic Description */}
-            <p className="text-sm sm:text-base text-gray-200 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-sm sm:text-base text-gray-200 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed whitespace-pre-line">
               {data.description}
             </p>
 
@@ -100,18 +91,20 @@ const MortgageLandingPage = () => {
                 <h3 className="text-xl font-bold mb-2">Tristan Pearrow</h3>
                 <p className="text-gray-600 text-sm mb-1">Mortgage Loan Officer</p>
                 <p className="text-gray-500 text-xs mb-1">NMLS ID: 1878186</p>
-                <div className="flex items-center gap-3 w-full">
+                
+                {/* ✅ FIXED: Replaced broken Iconify images with Lucide React icons */}
+                <div className="flex items-center gap-3 w-full mt-2">
                   <a href="https://www.facebook.com/loanswithtristan" className="w-9 h-8 md:w-10 md:h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition">
-                    <Icon src={icons.facebook} size={18} />
+                    <Facebook className="w-4 h-4 text-gray-700" />
                   </a>
                   <a href="http://instagram.com/loanwolfmoney" className="w-9 h-8 md:w-10 md:h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition">
-                    <Icon src={icons.instagram} size={18} />
+                    <Instagram className="w-4 h-4 text-gray-700" />
                   </a>
                   <a href="https://www.youtube.com/@loanwolfmoney" className="w-9 h-8 md:w-10 md:h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition">
-                    <Icon src={icons.youtube} size={18} />
+                    <Youtube className="w-4 h-4 text-gray-700" />
                   </a>
                   <a href="https://www.tiktok.com/@loanwolfmoney" className="w-9 h-8 md:w-10 md:h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition">
-                    <Icon src={icons.tiktok} size={18} />
+                    <Music2 className="w-4 h-4 text-gray-700" />
                   </a>
                 </div>
               </div>
