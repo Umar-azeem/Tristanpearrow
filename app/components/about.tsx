@@ -213,7 +213,7 @@ export default function AboutPage() {
             <p className="text-gray-600 mb-6">
               With this mortgage calculator, you can easily determine your estimated monthly payment, as well as how much interest you might pay and your projected principal balances. You can also input prepayment amounts to see their impact on your mortgage.
             </p>
-            <Link href="/calculator">
+            <Link href="/tools">
               <button className="bg-[#1470AF] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#f36f55] transition">
                 Try Our Mortgage Calculator
               </button>

@@ -345,7 +345,7 @@ export default function Tools() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-b from-[#1470AF] to-[#004d26] text-white rounded-2xl py-16 px-4">
+      <div className="bg-gradient-to-b from-[#1470AF] to-[#0f95ee] text-white rounded-2xl py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 flex gap-3 justify-center p-4">
             <ToolCase className="w-10 h-10" />
